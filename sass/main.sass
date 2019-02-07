@@ -24,7 +24,9 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
-
+.no-padding
+  padding-right: 0
+  padding-left: 0
 .img-responsive
 	display: block
 	max-width: 100%
@@ -309,5 +311,41 @@ a
 		height: 35%
 		left: 0
 		top: 65%
+/* FOTO */
+.s-foto
+	height: 100%
+.foto
+	height: 100%
+	&-item
+		height: 550px
+		width: 100%
+		background-size: cover
+		background-repeat: no-repeat
+.preview
+	height: 100%
+	display: flex
+	flex-wrap: wrap
+	background-color: #13233c
+	&-link
+		display: inline-block
+		position: relative
+		width: 50%
+		height: 50%
+		background-size: cover
+		background-repeat: no-repeat
+		transition: .25s ease
+		cursor: pointer
+		&:hover
+			 opacity: .8
+		&_active::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: #13233c url(../img/logo.png) center no-repeat
+			background-size: 50%
+			opacity: .7
 
 @import "media" // Always at the end
