@@ -1,4 +1,7 @@
 $(function() {
+// Маска ввода номера телефона (плагин maskedinput)
+  $('[type="tel"]').mask("+7(999) 999-99-99");
+// Слайдер "Галерея"
 	     $('.owl-carousel').owlCarousel({
         items:1,
         loop:false,

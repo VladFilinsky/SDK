@@ -35,6 +35,8 @@ body
 		width: 100%
 .text-center
 	text-align: center
+.white-text
+	color: #fff
 
 b, strong
 	font-weight: bold
@@ -83,13 +85,45 @@ a
 	display: inline-block
 	padding: 8px 22px
 	text-transform: uppercase
+	text-decoration: none
+	text-align: center
 	font-weight: 500
 	font-size: 12px
 	color: #fff
+	cursor: pointer
 	background-color: $accent
 	border-radius: 19px
 	border: none
 	box-shadow: 2.347px 4.415px 14.55px 0.45px rgba(0, 0, 1, 0.18)
+	/* FORM STYLE */
+.form-input
+	font-family: $opensans
+	width: 100%
+	margin-bottom: 16px
+	border-radius: 8px
+	padding: 10px 15px
+	color: $text
+	border-color: #d0d0d0
+	font-size: 12px
+.form-check
+	font-size: 11px
+	font-weight: 200
+	text-align: center
+	opacity: .5
+.form-link
+	cursor: pointer
+	text-decoration: underline
+	/* контейнер с иконками */
+.icon
+	width: 100%
+	&_box
+		display: inline-block
+		width: 55px
+		height: 60px
+		margin-right: 5px
+		&__img
+			height: 95%
+			padding: 6px 0 0 10px
 /* HEADER */
 .header
 	position: relative
@@ -101,7 +135,8 @@ a
 	background-size: 60%
 .logo
 	&-img
-		max-width: 80%
+		width: 100%
+		max-width: 210px
 	&-text
 		display: inline-block
 		font-size: 8px
@@ -208,22 +243,6 @@ a
 		font-weight: 200
 		margin-bottom: 20px
 	&-form
-		&_input
-			font-family: $opensans
-			width: 100%
-			margin-bottom: 16px
-			border-radius: 8px
-			padding: 10px 15px
-			color: $text
-			font-size: 12px
-		&_check
-			font-size: 11px
-			font-weight: 200
-			text-align: center
-			opacity: .5
-		&_link
-			cursor: pointer
-			text-decoration: underline
 		&_btn
 			display: block
 			margin: 0 auto
@@ -264,17 +283,6 @@ a
 .prospective
 	&-text
 		margin-top: 30px
-	&-icon
-		width: 100%
-		margin-top: 20px
-		&_box
-			display: inline-block
-			width: 55px
-			height: 60px
-			margin-right: 5px
-			&__img
-				height: 95%
-				padding: 6px 0 0 10px
 	&-svg
 		top: 0
 		right: 0
@@ -429,14 +437,16 @@ a
 					background-color: #d4d4d4				
 		&_right
 			width: 70%
-			padding: 25px
+			padding: 25px 25px 60px 25px
+			height: 100%
 		&_title
 			font-weight: bold
 			margin-bottom: 10px
 		&_text
-			min-height: 100px
+			
 		&_btn
-			margin-top: 10px
+			position: absolute
+			bottom: 25px
 			background-color: #979797
 	&-svg
 		width: 100%
@@ -446,7 +456,278 @@ a
 .s-discount
 	background-size: cover
 	background-repeat: no-repeat
-	min-height: 750px
-	padding: 150px 0
+
+	padding: 120px 0
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		opacity: .5
+		background: -webkit-linear-gradient(left, rgba(14,14,14,1) 0%,rgba(125,126,125,.3) 60%)
+.discount
+	&-line
+		width: 150px
+	&-text
+		color: #fff
+		width: 80%
+		margin: 20px 0 30px 0
+	&-form
+		margin-top: 20px
+		width: 55%
+		&_check
+			opacity: .9
+			margin-bottom: 20px
+		&_btn
+			width: 100%
+/* DISCAUNT END */
+/* FLOOR */
+.s-floor
+	padding: 130px 0
+.floor-line
+	width: 250px
+.room-layout
+	padding-bottom: 30px
+.room-line
+	background-color: $blue
+	width: 250px
+.room-layout_box__title
+	margin-bottom: 0
+
+.layout
+	margin-top: 50px
+	&-box
+		border: 1px solid #e8e8e8
+		border-radius: 10px
+		margin: 15px 0
+		&_line
+			width: 27%
+			background-color: $blue
+			height: 8px
+			margin-bottom: 0
+		&_img
+			display: inline-block
+			padding: 30px
+			width: 100%
+			height: 100%
+			min-height: 228px
+		&_bottom
+			padding: 30px 30px 20px 30px
+			background-color: #f2f2f2
+			border-bottom-left-radius: 10px 
+			border-bottom-right-radius: 10px
+		&_oldprice
+			display: inline-block
+			text-decoration: line-through
+			color: #9b9b9b
+			font-size: 14px
+			font-weight: 600
+		&_newprice
+			display: inline-block
+			text-transform: uppercase
+			font-weight: 600
+/* ABOUT */
+.s-about
+	padding: 150px 0 100px 0
+	position: relative
+.about
+	&-svg
+		width: 100%
+	&-line
+		width: 68%
+	&-text
+		margin-top: 30px
+	&-right
+		font-family: $opensans
+		color: #ababab		
+		&_label
+			font-size: 30px
+			font-weight: bold
+		&_text
+			font-weight: 200
+/* ABOUT */
+/* SOON */
+.s-soon
+	padding: 150px  0
+	position: relative
+.soon
+	position: relative
+	z-index: 2
+	&-svg
+		width: 100%
+	&-line
+		width: 90%
+	&-text
+		margin: 40px 0 30px 0
+		width: 90%
+	&-link
+		text-transform: uppercase
+		color: $blue
+		text-decoration: underline
+		font-size: 12px
+		font-weight: 600
+		margin: 0
+		&:hover
+			color: lighten($blue, 30%)
+			text-decoration: underline
+/* SOON END */
+/* QUESTION */
+.s-question
+	background-color: $sectionbg
+	padding: 100px 0
+	font-family: $opensans
+.question
+	&-line
+		width: 38%
+	&-text
+		width: 70%
+		margin: 30px 0
+	&-form_box
+		display: flex
+		&__input
+			width: 40%
+		&__textarea
+			width: 60%
+			margin-left: 15px
+	&-form_check
+		text-align: left
+		opacity: .8
+	&-form_btn
+		width: 38%
+		margin-top: 10px
+	&-form_link
+		color: #333
+		&:hover
+			color: #333
+			text-decoration: underline
+.manager
+	text-align: center
+	&-foto
+		display: inline-block
+		width: 100%
+		height: 170px
+		position: relative
+	&-title
+		font-size: 14px
+		text-transform: uppercase
+		margin: 20px 0
+		strong
+			white-space: nowrap
+/* QUESTION */
+/* COMMENT */
+.s-comment
+	padding: 130px 0 100px 0
+	position: relative
+.comment
+	margin: 60px 0
+	&-svg
+		width: 40%
+		z-index: -1
+	&-line
+		width: 250px
+	&-top
+		display: flex
+		&_img
+			display: inline-block
+			width: 110px
+			height: 110px
+			position: relative
+			margin-right: 15px
+		&_title
+			text-transform: uppercase
+			margin-top: 30px
+	&-box
+		background-color: $sectionbg
+		border-radius: 10px
+		border: 1px solid $sectionbg
+		padding: 40px 30px 80px 30px
+		position: relative
+		height: 100%
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			width: 60%
+			height: 40px
+			border-top-right-radius: 10px
+			background-color:#dadada
+	&-text
+		margin-top: 20px
+		&_bottom
+			position: absolute
+			bottom: 40px
+			left: 30px
+	&-link
+		color: $blue
+		text-decoration: underline
+		&:hover
+			color: $blue
+			text-decoration: underline
+	&-btn
+		display: block
+		width: 200px
+		text-align: center
+		margin: 0 auto
+		background-color: $blue			
+/* COMMENT END */
+/* MAP */
+.s-map
+	min-height: 500px
+	position: relative
+.map
+	position: absolute
+	padding: 30px
+	width: 300px
+	left: 10%
+	top: 50%
+	transform: translateY(-50%)
+	background-color: #fff
+	border-radius: 40px
+	&-svg
+		width: 40%
+	&-title
+		font-size: 27px
+	&-title__big
+		font-size: 17px
+.s-bottom
+	background-color: $blue
+	position: relative
+	padding: 100px 0
+.s-footer
+		background-color: $footer
+		padding: 50px 0
+.footer
+	&-text
+		display: inline-block
+		margin: 0
+		padding-top: 5px
+		font-size: 10px
+	&-address
+		margin: 0
+	&-callback
+		margin-top: -8px
+		z-index: 0
+		&_phone
+			margin: 0
+.s-copyright
+	background-color: #232932
+	padding: 30px 0
+.copyright
+	&-box
+		height: 100%
+		display: flex
+		&__text
+			color: #fff
+			opacity: .5
+			font-size: 12px
+			margin: auto auto auto 0
+
+
+.sells-copyright-block__pop-up
+	z-index: 2
 
 @import "media" // Always at the end
