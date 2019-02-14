@@ -45,6 +45,9 @@ a
 	&:hover
 		color: #fff
 		text-decoration: none
+section
+	position: relative
+	overflow: hidden
 .title
 	font-family: $default-font
 	line-height: 1.25
@@ -130,6 +133,7 @@ a
 .header
 	position: relative
 	z-index: 1
+	overflow: hidden 
 	padding: 30px 0 30px 0
 	font-family: $opensans
 	color: #fff
@@ -224,9 +228,9 @@ a
 		width: 88%
 		opacity: .5
 	&-svg
-		left: 40%	
+		right: 0	
 		top: 0
-		width: 100%
+		width: 50%
 		height: 100%
 .formhead
 	position: relative
@@ -275,7 +279,7 @@ a
 				height: 28px
 				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 51.6 51.6' style='enable-background:new 0 0 51.6 51.6' xml:space='preserve'%3E%3Cpath d='M46.2,27.5c0-0.3-0.2-0.6-0.5-0.7L9.5,13.3c-0.3-0.1-0.6,0-0.8,0.2c-0.2,0.2-0.2,0.6,0,0.8l9.3,13L8.7,39.3 c-0.2,0.2-0.2,0.6,0,0.8c0,0,0,0.1,0.1,0.1c0.2,0.2,0.5,0.3,0.7,0.2l36.3-12.2C46,28,46.2,27.8,46.2,27.5z M11.2,38.3l8.1-10.4 c0.2-0.2,0.2-0.6,0-0.8l-8.3-11.6l32.3,12L11.2,38.3z'/%3E%3Cpolygon points='19.4,27 46.2,27.5 9.8,39.5 '/%3E%3C/svg%3E")
 	&-svg
-		width: 40%
+		width: 60%
 /* NEARBY END */
 /* PROSPECTIVE */
 .s-prospective
@@ -294,15 +298,18 @@ a
 	padding-bottom: 40px
 	position: relative
 	z-index: 2
+	height: 100%
 	&-line
 		width: 400px
 	&-list
 		margin: 30px 0 0 0
 		padding: 0
+		display: table
 		&_item
 			width: 20%
 			padding: 0 0 0 60px
-			&:before
+			display: table-cell
+			&::before
 				width: 52px
 				height: 50px
 				top: 0
@@ -322,14 +329,13 @@ a
 		top: 65%
 /* FOTO */
 .s-foto
-	height: 100%
 .foto
-	height: 100%
 	&-item
-		height: 550px
+		min-height: 600px
 		width: 100%
 		background-size: cover
 		background-repeat: no-repeat
+		background-position: center center
 .preview
 	height: 100%
 	display: flex
@@ -342,6 +348,7 @@ a
 		height: 50%
 		background-size: cover
 		background-repeat: no-repeat
+		background-position: center center		
 		transition: .25s ease
 		cursor: pointer
 		&:hover
@@ -386,7 +393,6 @@ a
 /* BENEFIT END */
 /* BUY */
 .s-buy
-	position: relative
 	z-index: 2
 	padding: 150px 0
 .buy
@@ -458,9 +464,8 @@ a
 .s-discount
 	background-size: cover
 	background-repeat: no-repeat
-
+	background-position: center center
 	padding: 120px 0
-	position: relative
 	&::before
 		content: ''
 		position: absolute
@@ -534,7 +539,6 @@ a
 /* ABOUT */
 .s-about
 	padding: 150px 0 100px 0
-	position: relative
 .about
 	&-svg
 		width: 100%
@@ -554,7 +558,6 @@ a
 /* SOON */
 .s-soon
 	padding: 150px  0
-	position: relative
 .soon
 	position: relative
 	z-index: 2
