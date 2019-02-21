@@ -20,16 +20,18 @@
 		<div class="container">
 			<div class="header-top">
 				<div class="row justify-content-between">
-					<div class="col-md-3">
+					<div class="col-xl-4 col-md-6 col-12">
 						<div class="logo">
-							<img class="logo-img img-responsive" src="img/logo.png" alt="Западный квартал">
-							<span class="logo-text">КВАРТИРЫ ОТ ЗАСТРОЙЩИКА  <br>В НОВОМ ЖИЛОМ МИКРОРАЙОНЕ <br> В п.Белый ЯР</span>
+							<a href="#" class="logo-img__link">
+								<img class="logo-img img-responsive" src="img/logo.png" alt="Западный квартал">
+							</a>
+							<span class="logo-text">КВАРТИРЫ ОТ ЗАСТРОЙЩИКА<br>В НОВОМ ЖИЛОМ МИКРОРАЙОНЕ<br>В П.БЕЛЫЙ ЯР</span>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-xl-6 col-md-6 col-12">
 						<div class="callback">
-							<a href="tel:7909544343" class="callback-phone">+ 7 909 <span class="callback-phone_big">954-43-43</span></a>
-							<button class="button callback-btn">обратный звонок</button>
+							<a href="tel:7909544343" class="callback-phone">+ 7 909 <strong class="callback-phone_big">954-43-43</strong></a>
+							<a href="#callback" class="button callback-btn" data-effect="mfp-move-horizontal">обратный звонок</a>
 							<ul class="callback-address">
 								<li class="callback-address_text callback-address__map">Офис продаж: г. Сургут, ул. Университетская 19</li>
 								<li class="callback-address_text callback-address__clock"><strong>пн-пт с 9:00 до 18:00</strong></li>
@@ -40,27 +42,29 @@
 			</div>
 			<div class="content">
 				<div class="row justify-content-between">
-					<div class="col-md-6">
-						<div class="line content-line"></div>
-						<h1 class="title content-title">РАСПРОДАЖА КВАРТИР<br>В НОВОМ ДОМЕ</h1>
-						<p class="content-subtitle">в п.Белый Яр</p>
-						<span class="content-price">от <strong>50 000 <i class="fas fa-ruble-sign"></i></strong> <strong> 45 000 <i class="fas fa-ruble-sign"></i> м<sup>2</sup></strong></span>
-						<ul class="content-icon">
+					<div class="col-xl-6 col-sm-12 col-md-6 col-lg-6 col-12">
+							<span class="section-title wow fadeInLeft" data-wow-duration="1.5s">
+							<div class="line content-line"></div>
+						<h1 class="title content-title">КВАРТИРЫ<br>В НОВОМ ДОМЕ</h1>
+							</span>
+						<p class="content-subtitle wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.1s">в п.Белый Яр г. Сургут</p>
+						<span class="content-price wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">от 53 000 р. / м<sup>2</sup><br><strong>с чистовой отделкой</strong></span>
+						<ul class="content-icon wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
 							<li class="content-icon_item list-style-img">Срок сдачи <br> IV квартал 2019</li>
+							<li class="content-icon_item list-style-img">5 км от <br>Сургута</li>							
 							<li class="content-icon_item list-style-img">Все нужное <br>рядом</li>
-							<li class="content-icon_item list-style-img">5 км от <br>Сургута</li>
 							<li class="content-icon_item list-style-img">Гибкие условия <br>приобетения</li>
 						</ul>	
 						<p class="content-text">Застройщик ПАО "Сургутстройтрест" перешел под управление новой структуры. Проект ЖК "Западный квартал" (Гидронамыв) был полностью профинансирован. Строительство дома завершится точно в срок в 4 квартале 2019 года.</p>		
 					</div>
-					<div class="col-md-3">
+					<div class="col-xl-4 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-5 col-12">
 						<div class="formhead">
-							<div class="line formhead-line"></div>
-							<h3 class="title formhead-title">Запишитесь на экскурсию <br>прямо сейчас и получите<br>
-								<strong>СПЕЦИАЛЬНЫЙ ПОДАРОК</strong></h3>
-								<form action="#" class="formhead-form" name="form_header">
-									<input type="text" class="formhead-form_input form-input"  placeholder="Ваше имя*">
-									<input type="tel" class="formhead-form_input form-input" placeholder="Ваш телефон*">
+							<h3 class="title formhead-title">Запишитесь<br> <span class="formhead-title_big">на экскурсию </span><br>
+								<strong>и получите<br>СПЕЦИАЛЬНЫЙ ПОДАРОК</strong></h3>
+								<form class="formhead-form" name="form-callback">
+									<input type="text" class="formhead-form_input form-input" name="name" placeholder="Ваше имя*">
+									<input type="tel" class="formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+									<input type="hidden" name="callback">
 									<p class="formhead-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="formhead-form_link form-link"
 										target="_blank">политикой обработки персональных данных</a></p>
 										<button class="button formhead-form_btn" type="submit">отправить заявку</button>
@@ -70,7 +74,7 @@
 						</div>
 					</div>
 				</div> <!-- container -->
-				<div class="content-svg bg-svg">
+				<div class="content-svg bg-svg wow fadeInRight" data-wow-duration="1.5s">
 					<svg width="1200" height="100%">
 						<pattern id="bg-svg_img" width="100%" height="100%">
 							<image xlink:href=/img/bg-1.jpg y="100" x="-200" width="1900"/>
@@ -83,10 +87,12 @@
 			<section class="s-prospective">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-5">
-							<div class="prospective">
-								<div class="line"></div>
-								<h2 class="title title-lite">ЗАПАДНЫЙ квартал<br><strong> будущее Белого Яра</strong></h2>
+						<div class="col-xl-5 col-lg-6 col-md-7 col">
+							<div class="prospective wow fadeInLeft">
+								<span class="section-title">
+									<div class="line"></div>
+									<h2 class="title title-lite">ЗАПАДНЫЙ квартал<br><strong> будущее Белого Яра</strong></h2>
+								</span>
 								<p class="icon-text prospective-text">Новая команда ДСК №1 взялась за проект Западный Жилой Квартал, чтобы создать ДОСТУПНЫЕ КВАДРАТНЫЕ МЕТРЫ для югорчан. Сейчас стоимость жилья в Белом Яру ниже чем в новых районах Сургута, а это скажется и на цене проекта, и, в главную очередь на выгодную цену для покупателя. <br><br>В будущем агломерация Сургута и района способна улучшить инвестиционную привлекательность муниципалитетов и помочь в решении многих проблем, а для нашего проекта это конечно же плюс в инвестиционной привлекательности для простых граждан</p>
 								<div class="icon">
 									<span class="icon_box"> <img class="img-responsive icon_box__img" src="img/icon/leaf-orange.png" alt=""></span>
@@ -180,41 +186,62 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="comfort">
-						<div class="line line-inverse comfort-line"></div>
-						<h2 class="title title-lite">ЗАПАДНЫЙ квартал<br><strong> будущее Белого Яра</strong></h2>
-						<ul class="comfort-list">
-							<li class="comfort-list_item icon-text list-style-img"><strong class="big">живописный</strong> комплекс в окружении лесопарка. Отсутствие шума города</li>
-							<li class="comfort-list_item icon-text list-style-img"><strong class="big">идеальная</strong> экология и завораживающие вид из окон круглый год</li>
-							<li class="comfort-list_item icon-text list-style-img"><strong class="big">безопасное</strong> место для жизни вблизи Сургата без вредных производств</li>
-							<li class="comfort-list_item icon-text list-style-img"><strong class="big">развитая</strong> и обновляемая инфраструктура <br></li>
-						</ul>	
+						<span class="section-title wow fadeInLeft">
+							<div class="line line-inverse comfort-line"></div>
+							<h2 class="title title-lite">комфорт<br><strong>и удобство</strong></h2>
+						</span>
+						<div class="comfort-list">
+						<div class="row">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+								<div class="comfort-list_item comfort-list_item__1 icon-text list-style-img wow fadeInUp" data-wow-delay="0s"><strong class="big">живописный комплекс</strong><br> в окружении лесопарка. Отсутствие шума города</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+								<div class="comfort-list_item comfort-list_item__2 icon-text list-style-img wow fadeInUp" data-wow-delay="0.1s"><strong class="big">идеальная экология</strong><br> и завораживающие вид из окон круглый год</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+									<div class="comfort-list_item comfort-list_item__3 icon-te list-style-img wow fadeInUp" data-wow-delay="0.2s"><strong class="big">безопасное место</strong><br> для жизни вблизи Сургата без вредных производств</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+								<div class="comfort-list_item comfort-list_item__4 icon-text list-style-img wow fadeInUp" data-wow-delay="0.3s"><strong class="big">инфраструктура</strong><br>развитая и обновляемая</div>
+							</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="prospective-svg svg-box">
+		<div class="prospective-svg svg-box wow fadeInRight" data-wow-duration="1.5s">
+		<svg width="100%" height="100%">
+			<circle r="420" cx="550" cy="220"  fill="#f1f1f1"/>
+		</svg>
+	</div>
+			<div class="prospective-svg svg-box wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.4s">
+		<svg width="100%" height="100%">
+			<pattern id="circlesvg-2" width="100%" height="100%">
+				<image xlink:href=img/bg-3.jpg y="10" x="-170" width="860"/>
+			</pattern>
+			<circle r="250" cx="650" cy="300"  fill="url(#circlesvg-2)" stroke-width="20" stroke="#fff"/>
+		</svg>
+	</div>
+	<div class="prospective-svg svg-box wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.8s">
 		<svg width="100%" height="100%">
 			<pattern id="circlesvg-1" width="100%" height="100%">
 				<image xlink:href=img/bg-2.jpg y="10" x="-170" width="860"/>
 			</pattern>
-			<pattern id="circlesvg-2" width="100%" height="100%">
-				<image xlink:href=img/bg-3.jpg y="10" x="-170" width="860"/>
-			</pattern>
-			<circle r="420" cx="550" cy="220"  fill="#f1f1f1"/>
-			<circle r="250" cx="650" cy="300"  fill="url(#circlesvg-2)" stroke-width="20" stroke="#fff"/>
-			<circle r="250" cx="300" cy="310"  fill="url(#circlesvg-1)" stroke-width="20" stroke="#fff"/>
-		</svg>
-	</div>
-	<div class="comfort-svg svg-box">
+				<circle r="250" cx="300" cy="310"  fill="url(#circlesvg-1)" stroke-width="20" stroke="#fff"/>
+			</svg>
+		</div>
+	<div class="comfort-svg svg-box wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
 		<svg width="100%" height="100%">
 			<circle r="2000" cx="50%" cy="2000"  stroke="#fff" stroke-width="10" fill="#f1f1f1"/>
 		</svg>
+	</div>
 	</section>
 	<section class="s-foto">
 		<div class="container-fluid no-padding">
 			<div class="row no-gutters">
-				<div class="col-md-8">
+				<div class="col-xl-8 col-lg-12 col-md-12">
 					<div class="owl-carousel foto">
 						<div class="foto-item" data-hash="slide-1" style="background-image: url(img/bg-4.jpg);"></div>
 						<div class="foto-item" data-hash="slide-2" style="background-image: url(img/bg-2.jpg);"></div>
@@ -222,7 +249,7 @@
 						<div class="foto-item" data-hash="slide-4" style="background-image: url(img/bg-1.jpg);"></div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xl-4 col-lg-5 d-none d-xl-block">
 					<div class="preview">
 						<a href="#slide-1" class="preview-link" style="background-image: url(img/icon/preview-1.jpg);"></a>
 						<a href="#slide-2" class="preview-link" style="background-image: url(img/icon/preview-2.jpg);"></a>
@@ -233,53 +260,60 @@
 			</div>
 		</div>
 	</section>
+	<section class="s-wrapper">
 	<section class="s-nearby">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-4 offset-md-5">
-					<div class="nearby">
-						<div class="line"></div>
-						<h2 class="title title-lite">ВСЕ НЕОБХОДИМОЕ<br><strong>РЯДОМ с вами</strong></h2>
+			<span class="section-title wow fadeInLeft">
+				<div class="line"></div>
+				<h2 class="title title-lite">ВСЕ НЕОБХОДИМОЕ<br><strong>РЯДОМ с вами</strong></h2>
+			</span>
+			<div class="nearby">	
+				<div class="row">
+					<div class="col-xl-4 col-lg-6 col-md-8 col-sm-12">
 						<p class="nearby-label">для детей</p>
 						<ul class="nearby-list">
-							<li class="nearby-list_item icon-text list-style-img"><strong class="big">2 школы</strong> <br> Ученики СОШ №1 и СОШ№3 - гордость п.Белый Яр</li>
-							<li class="nearby-list_item icon-text list-style-img"><strong  class="big">3 детских сада</strong> <br>Детские садики "Сибирячок", "Теремок", "Соловушка" <br>
+							<li class="nearby-list_item icon-text list-style-img wow fadeInUp"><strong class="big">2 школы</strong> <br> Ученики СОШ №1 и СОШ№3 - гордость п.Белый Яр</li>
+							<li class="nearby-list_item icon-text list-style-img wow fadeInUp"><strong  class="big">3 детских сада</strong> <br>Детские садики "Сибирячок", "Теремок", "Соловушка" <br>
 							- прекрасный выбор для вашего ребенка</li>
-							<li class="nearby-list_item icon-text list-style-img"><strong  class="big">3 юношеских центра</strong> <br> Центр досуга, центр дополнительного образова</li>
-							<li class="nearby-list_item icon-text list-style-img"><strong  class="big">1 библиотека</strong> <br></li>
+							<li class="nearby-list_item icon-text list-style-img wow fadeInUp"><strong  class="big">3 юношеских центра</strong> <br> Центр досуга, центр дополнительного образова</li>
+							<li class="nearby-list_item icon-text list-style-img wow fadeInUp"><strong  class="big">1 библиотека</strong> <br></li>
 						</ul>
+					</div>
+					<div class="col-xl-4 offset-xl-1 col-lg-6 col-md-8 col-sm-12">
 						<p class="nearby-label">для семьи</p>
 						<ul class="nearby-list">
-							<li class="nearby-list_item icon-text list-style-img"><strong  class="big">Множество магазинов</strong> <br>Продуктовые, магазины детских товаров и одежды,бытовой химии и т.д</li>
-							<li class="nearby-list_item icon-text list-style-img"><strong  class="big">Отделения банков и банкоматы</strong> <br>СБЕРБАНК, СУРГУТНЕФТЕГАЗБАНК, Банк ОТКРЫТИЕ и множество банкоматов</li>
-							<li class="nearby-list_item icon-text list-style-img"><strong  class="big">Поликлиника, стомотология</strong> <br>Все что нужно для здоровой жизни за городом</li>
+							<li class="nearby-list_item icon-text list-style-img wow fadeInUp"><strong  class="big">Множество магазинов</strong> <br>Продуктовые, магазины детских товаров и одежды,бытовой химии и т.д</li>
+							<li class="nearby-list_item icon-text list-style-img wow fadeInUp"><strong  class="big">Отделения банков и банкоматы</strong> <br>СБЕРБАНК, СУРГУТНЕФТЕГАЗБАНК, Банк ОТКРЫТИЕ и множество банкоматов</li>
+							<li class="nearby-list_item icon-text list-style-img wow fadeInUp"><strong  class="big">Поликлиника, стомотология</strong> <br>Все что нужно для здоровой жизни за городом</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="nearby-svg svg-box">
+				<div class="nearby-svg svg-box wow fadeInRight" data-wow-duration="1.5s">
 			<svg width="100%" height="100%">
-				<pattern id="circlesvg-1" width="100%" height="100%">
-					<image xlink:href=img/bg-2.jpg y="10" x="-170" width="680"/>
-				</pattern>
-				<pattern id="circlesvg-2" width="100%" height="100%">
-					<image xlink:href=img/bg-3.jpg y="10" x="-170" width="680"/>
-				</pattern>
-				<circle r="420" cx="90" cy="50%"  fill="#f1f1f1"/>
-				<circle r="200" cx="300" cy="68%"  fill="url(#circlesvg-2)" stroke-width="20" stroke="#fff"/>
-				<circle r="200" cx="230" cy="30%"  fill="url(#circlesvg-1)" stroke-width="20" stroke="#fff"/>
+				<circle r="360" cx="600" cy="270"  fill="#f1f1f1"/>
 			</svg>
 		</div>
+		<div class="nearby-svg svg-box wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.6s">
+			<svg width="100%" height="100%">
+				<pattern id="nearbysvg" width="100%" height="100%">
+					<image xlink:href=img/bg-nearby.jpg y="10" x="-290" width="750"/>
+				</pattern>
+				<circle r="250" cx="400" cy="290"  fill="url(#nearbysvg)" stroke-width="20" stroke="#fff"/>
+			</svg>
+		</div>
+
 	</section>
-	<section class="s-benefit">
 		<div class="benefit">
 			<div class="container">
-				<div class="line benefit-line line-inverse"></div>
-				<h2 class="title title-lite">почему жк<br><strong>западный квартал</strong></h2>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="benefit-box">
+				<span class="section-title wow fadeInLeft">
+					<div class="line benefit-line line-inverse"></div>
+					<h2 class="title title-lite">почему жк<br><strong>западный квартал</strong></h2>
+				</span>
+				<div class="row justify-content-md-center">
+					<div class="col-xl-4 col-lg-4 col-md-6">
+						<div class="benefit-box wow fadeInLeft" data-wow-delay="0.4s">
 							<span class="benefit-box_img">
 								<svg width="100%" height="100%">
 									<use xlink:href='#benefit-1' />
@@ -294,8 +328,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="benefit-box">
+					<div class="col-xl-4 col-lg-4 col-md-6">
+						<div class="benefit-box wow fadeInUp">
 							<span class="benefit-box_img">
 								<svg width="100%" height="100%">
 									<use xlink:href='#benefit-2' />
@@ -310,8 +344,8 @@
 							</div>								
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="benefit-box">
+					<div class="col-xl-4 col-lg-4 col-md-6">
+						<div class="benefit-box wow fadeInRight" data-wow-delay="0.4s">
 							<span class="benefit-box_img">
 								<svg width="100%" height="100%">
 									<use xlink:href='#benefit-3' />
@@ -329,139 +363,136 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<section class="s-buy">
-	<div class="buy-svg svg-box">
-		<svg width="100%" height="100%">
-			<circle r="2000" cx="50%" cy="2000"  stroke="#fff" stroke-width="10" fill="#f7f7f7"/>
-		</svg>
-	</div>
-	<div class="container">
-		<div class="line buy-line"></div>
-		<h2 class="title title-lite">как купить<br><strong>у нас квартиру?</strong></h2>
-		<div class="buy">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="buy-box">
-						<div class="buy-box_left buy-box_left__one">
-							<span class="buy-box_img" style="background-image: url(img/icon/leaf-orange.png);"></span>
-						</div>
-						<div class="buy-box_right">
-							<div class="h4 buy-box_title">Ипотечные<br> каникулы</div>
-							<p class="buy-box_text icon-text">Программа "Ипотечные каникулы" позволяет комфортно совмещать кредитные и арендные платежи до окончания строительства</p>
-							<button class="buy-box_btn button"  data-title="Ипотечные каникулы">подробнее</button>
-						</div>
+		<section class="s-buy">
+			<div class="buy-svg svg-box">
+				<svg width="100%" height="100%">
+					<circle r="2000" cx="50%" cy="2000"  stroke="#fff" stroke-width="1" fill="#f7f7f7"/>
+				</svg>
+			</div>
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+						<span class="section-title wow fadeInLeft">
+							<div class="line buy-line"></div>
+							<h2 class="title title-lite">финансовое<br><strong>предложение</strong></h2>
+						</span>
+					</div>
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<a href="#callback" class="button buy-btn" data-effect="mfp-move-horizontal">связаться с менеджером</a>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="buy-box">
-						<div class="buy-box_left buy-box_left__two">
-							<span class="buy-box_img" style="background-image: url(img/icon/leaf-orange.png);"></span>
+
+				<div class="buy">
+					<div class="row justify-content-md-center">
+						<div class="col-xl-4 col-lg-4 col-md-6">
+							<div class="buy-box wow fadeInLeft" data-wow-delay="0.4s">
+								<div class="buy-box_left buy-box_left__one" data-hash="buy-box_left__one">
+									<span class="buy-box_img" style="background-image: url(img/icon/leaf-orange.png);"></span>
+								</div>
+								<div class="buy-box_right">
+									<h4 class="buy-box_title">Ипотечные<br> каникулы</h4>
+									<p class="buy-box_text icon-text">Программа "Ипотечные каникулы" позволяет комфортно совмещать кредитные и арендные платежи до окончания строительства</p>
+
+									<!-- Этот текст добавится в попап окно при нажатии кнопки "Подробнее" -->
+									<p class="more-box_text">
+
+										Программа "Ипотечные каникулы" позволяет комфортно совмещать кредитные и арендные платежи до окончания строительства Программа "Ипотечные каникулы"<br><br> позволяет комфортно совмещать кредитные и арендные платежи до окончания строительства Программа<br><br>"Ипотечные каникулы" позволяет комфортно совмещать кредитные и арендные платежи до окончания строительства
+
+									</p>
+
+									<a href="#more" class="buy-box_btn button" data-effect="mfp-move-horizontal">подробнее</a>
+								</div>
+							</div>
 						</div>
-						<div class="buy-box_right">
-							<div class="h4 buy-box_title">Абсолютная <br>рассрочка</div>
-							<p class="buy-box_text icon-text">Рассрочка 0%. Для расчета размера и периодичности платежей обратитесь к нашему менеджеру</p>
-							<button class="buy-box_btn button"  data-title="Абсолютная рассрочка">подробнее</button>
+						<div class="col-xl-4 col-lg-4 col-md-6">
+							<div class="buy-box wow fadeInUp">
+								<div class="buy-box_left buy-box_left__two" data-hash="buy-box_left__two">
+									<span class="buy-box_img" style="background-image: url(img/icon/leaf-orange.png);"></span>
+								</div>
+								<div class="buy-box_right">
+									<h4 class="buy-box_title">Абсолютная <br>рассрочка</h4>
+									<p class="buy-box_text icon-text">Рассрочка 0%. Для расчета размера и периодичности платежей обратитесь к нашему менеджеру</p>
+
+									<!-- Этот текст добавится в попап окно при нажатии кнопки "Подробнее" -->
+									<p class="more-box_text">
+
+										Рассрочка 0%. Для расчета размера и периодичности платежей обратитесь к нашему менеджеру<br><br>
+									Рассрочка 0%. Для расчета размера и периодичности платежей обратитесь к нашему менеджеру<br><br>
+									Рассрочка 0%. Для расчета размера и периодичности платежей обратитесь к нашему менеджеру <br><br>Рассрочка 0%. Для расчета размера и периодичности платежей обратитесь к нашему менеджеру<br><br>Рассрочка 0%. Для расчета размера и периодичности платежей обратитесь к нашему менеджеру
+
+								</p>
+
+									<a href="#more" class="buy-box_btn button" data-effect="mfp-move-horizontal">подробнее</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="buy-box">
-						<div class="buy-box_left buy-box_left__three">
-							<span class="buy-box_img" style="background-image: url(img/icon/leaf-white.png);"></span>
-						</div>
-						<div class="buy-box_right">
-							<div class="h4 buy-box_title">Скидки <br>на квартиры</div>
-							<p class="buy-box_text icon-text">Специальная программа скидок на квартиры студии в ЖК "Тесла Парк". Купите квартиру еще выгоднее уже сегодня</p>
-							<button class="buy-box_btn button" data-title="Скидки на квартиры">подробнее</button>
+						<div class="col-xl-4 col-lg-4 col-md-6">
+							<div class="buy-box wow fadeInRight" data-wow-delay="0.4s">
+								<div class="buy-box_left buy-box_left__three" data-hash="buy-box_left__three">
+									<span class="buy-box_img" style="background-image: url(img/icon/leaf-white.png);"></span>
+								</div>
+								<div class="buy-box_right">
+									<h4 class="buy-box_title">Скидки <br>на квартиры</h4>
+									<p class="buy-box_text icon-text">Специальная программа скидок на квартиры студии в ЖК "Тесла Парк". Купите квартиру еще выгоднее уже сегодня</p>
+
+									<!-- Этот текст добавится в попап окно при нажатии кнопки "Подробнее" -->
+									<p class="more-box_text">
+
+										Специальная программа скидок на квартиры студии в ЖК "Тесла Парк". Купите квартиру еще выгоднее уже сегодня Специальная программа скидок на квартиры студии в ЖК "Тесла Парк". <br><br> Купите квартиру еще выгоднее уже сегодня Специальная программа скидок на квартиры студии в ЖК "Тесла Парк". Купите квартиру еще выгоднее уже сегодня <br><br>Купите квартиру еще выгоднее уже сегодня Специальная программа скидок на квартиры студии в ЖК "Тесла Парк". Купите квартиру еще выгоднее уже сегодня
+
+									</p>
+
+									<a href="#more" class="buy-box_btn button" data-effect="mfp-move-horizontal">подробнее</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<section class="s-discount white-text" style="background-image: url(img/bg-discount.jpg);">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5">
-				<div class="discount">
-					<div class="line discount-line"></div>
-					<h2 class="title title-lite discount-title">скидки<br><strong>до конца февраля</strong></h2>
-					<p class="icon-text discount-text">Только до конца февраля успевайте приобести квартиры по сниженным ценам </p>
-					<h4>Получить выгодные <br>условия</h4>
-					<form action="#" class="discount-form" name="form_discount">
-						<input type="text" class="discount-form_input form-input"  placeholder="Ваше имя*">
-						<input type="tel" class="discount-form_input form-input" placeholder="Ваш телефон*">
-						<p class="discount-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="discount-form_link form-link"
-							target="_blank">политикой обработки персональных данных</a></p>
-							<button class="button discount-form_btn" type="submit">отправить заявку</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+		</section>
 	</section>
-	<section class="s-floor">
+	<section class="s-discount white-text" style="background-image: url(img/bg-discount.jpg);">
 		<div class="container">
-			<div class="line floor-line"></div>
-			<h2 class="title title-lite discount-title">планировка<br><strong>этажей</strong></h2>
-			<div class="layout floor-layout">
-				<div class="row">
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/floor-1.jpg" alt="план помещения" class="layout-box_img">
-							<div class="layout-box_bottom">
-								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title">1 Этаж</h4>
-								<p class="icon-text layout-box_text">Нужно что то сюда написать чвапвчмолв тотовстмиост </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/floor-1.jpg" alt="план помещения" class="layout-box_img">
-							<div class="layout-box_bottom">
-								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title">2 Этаж</h4>
-								<p class="icon-text layout-box_text">Нужно что то сюда написать чвапвчмолв тотовстмиост </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/floor-1.jpg" alt="план помещения" class="layout-box_img">
-							<div class="layout-box_bottom">
-								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title">3 Этаж</h4>
-								<p class="icon-text layout-box_text">Нужно что то сюда написать чвапвчмолв тотовстмиост </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/floor-1.jpg" alt="план помещения" class="layout-box_img">
-							<div class="layout-box_bottom">
-								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title">4 Этаж</h4>
-								<p class="icon-text layout-box_text">Нужно что то сюда написать чвапвчмолв тотовстмиост </p>
-							</div>
+			<div class="row">
+				<div class="col-xl-5 col-lg-6 col-md-8 col-sm-8 col-12 offset-0 offset-sm-2 offset-md-0">
+					<div class="discount">
+						<span class="section-title">
+							<div class="line discount-line"></div>
+							<h2 class="title title-lite discount-title">квартиры<br><strong>в новом доме</strong></h2>
+						</span>
+						<p class="icon-text discount-text">от 53 000 р. / м <sup>2</sup> <br><strong>с чистовой отделкой</strong></p>
+						<h4></h4>
+						<form action="#" class="discount-form" name="form-discount">
+							<input type="text" class="discount-form_input form-input" name="name" placeholder="Ваше имя*">
+							<input type="tel" class="discount-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+							<input type="hidden" name="discount">
+							<p class="discount-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="discount-form_link form-link"
+								target="_blank">политикой обработки персональных данных</a></p>
+								<button class="button discount-form_btn" type="submit">отправить заявку</button>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 	<section class="s-room">
 		<div class="container">
-			<div class="line room-line"></div>
-			<h2 class="title title-lite discount-title">планировка<br><strong>квартир</strong></h2>
+			<div class="row justify-content-between">
+				<div class="col-xl-3 col-sm-6 col-12">
+					<span class="section-title wow fadeInLeft">
+						<div class="line room-line"></div>
+						<h2 class="title title-lite discount-title">планировка<br><strong>квартир</strong></h2>
+					</span>					
+				</div>
+				<div class="col-xl-3 col-sm-6 col-12">
+					<button class="button room-btn">смотреть общий план</button>
+				</div>
+			</div>
 			<div class="layout room-layout">
 				<div class="row">
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/room-1.jpg" alt="план помещения" class="layout-box_img">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/5.png);"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -469,11 +500,11 @@
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/room-1.jpg" alt="план помещения" class="layout-box_img">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/6.png);"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -481,11 +512,11 @@
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/room-1.jpg" alt="план помещения" class="layout-box_img">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/7.png);"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -493,11 +524,11 @@
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/room-1.jpg" alt="план помещения" class="layout-box_img">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/8.png);"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -505,11 +536,11 @@
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/room-1.jpg" alt="план помещения" class="layout-box_img">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/9.png);"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -517,11 +548,11 @@
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/room-1.jpg" alt="план помещения" class="layout-box_img">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/10.png);"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -529,11 +560,11 @@
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/room-1.jpg" alt="план помещения" class="layout-box_img">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/11.png);"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -541,11 +572,11 @@
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
-						</div>
+						</a>
 					</div>
-					<div class="col-md-3">
-						<div class="layout-box">
-							<img src="img/planirovki/room-1.jpg" alt="план помещения" class="layout-box_img">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/12.png);"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -553,355 +584,554 @@
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
-						</div>
+						</a>
 					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/4.png);"></span>
+							<div class="layout-box_bottom">
+								<div class="line layout-box_line"></div>
+								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<span class="layout-box_oldprice">от 2 789 000 руб</span>
+								<span class="layout-box_newprice">от 2 486 000 руб.</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/3.png);"></span>
+							<div class="layout-box_bottom">
+								<div class="line layout-box_line"></div>
+								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<span class="layout-box_oldprice">от 2 789 000 руб</span>
+								<span class="layout-box_newprice">от 2 486 000 руб.</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/1.png);"></span>
+							<div class="layout-box_bottom">
+								<div class="line layout-box_line"></div>
+								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<span class="layout-box_oldprice">от 2 789 000 руб</span>
+								<span class="layout-box_newprice">от 2 486 000 руб.</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
+							<span class="layout-box_img" style="background-image: url(img/planirovki/2.png);"></span>
+							<div class="layout-box_bottom">
+								<div class="line layout-box_line"></div>
+								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<span class="layout-box_oldprice">от 2 789 000 руб</span>
+								<span class="layout-box_newprice">от 2 486 000 руб.</span>
+							</div>
+						</a>
+					</div>																				
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="s-about">
-		<div class="about-svg svg-box">
+		<div class="about-svg svg-box wow fadeInUp" data-wow-delay=".3s">
 			<svg width="100%" height="100%">
 				<circle r="2000" cx="50%" cy="2000"  stroke="#fff" stroke-width="10" fill="#f7f7f7"/>
 			</svg>
 		</div>
+		<div class="about-svg_line svg-box wow fadeInUp" data-wow-delay=".5s">
+			<svg width="100%" height="100%">
+				<g style="fill:none;stroke:#fff;stroke-opacity:0.8;stroke-width:40">
+					<polyline points="0,700 350,300 700,700"/>
+					<polyline points="150,700 350,450 550,700"/>
+				</g>
+			</svg>
+		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5">
-					<div class="about">
-						<div class="line about-line"></div>
-						<h2 class="title title-lite">О застройщике<br><strong> Компания ДСК1</strong></h2>
+				<div class="col-xl-5 col-md-6 col-12">
+					<div class="about wow fadeInLeft">
+						<span class="section-title">
+							<div class="line about-line"></div>
+							<h2 class="title title-lite">О застройщике<br><strong> Компания ДСК1</strong></h2>
+						</span>
 						<p class="icon-text about-text">Долгожитель на строительном рынке Сургута и Сургутского района. Начиная с 1991 года предприятие прошло большой и довольно сложный путь развития. За два десятилетия накоплен уникальный опыт работы на Крайнем Севере. Сегодня компания является одним из лидеров в области промышленного и гражданского строительства в регионе. <br> <br>ДСК1 вот уже 28 лет успешно возводит многоквартирные жилые дома, магазины, школы и больницы, производственные помещения любого назначения и площади.</p>
 						<div class="icon">
-							<span class="icon_box"> <img class="img-responsive icon_box__img" src="img/icon/leaf-orange.png" alt=""></span>
 							<span class="icon_box">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								viewBox="0 0 412.053 412.053" style="enable-background:new 0 0 412.053 412.053;" xml:space="preserve">
-								<path  fill="#e65a00" d="M396.399,67.735c-2.731-14.978-9.574-28.905-19.791-40.284c-0.02-0.022-0.039-0.045-0.059-0.067
-								c-5.233-5.909-13.905-14.033-25.497-19.181l-0.264-0.117C339.6,2.72,327.594,0,315.105,0c-18.47,0-35.94,5.962-50.522,17.243
-								c-0.014,0.011-0.08,0.063-0.098,0.076c-12.536,9.789-20.809,23.777-21.833,25.559h0c-0.046,0.078-0.091,0.157-0.134,0.236
-								c-6.577,12.058-10.053,25.726-10.053,39.527c0,2.866,0.15,5.767,0.448,8.621c0.277,2.667,1.873,5.017,4.248,6.26
-								c1.504,0.787,3.076,1.442,4.691,1.96c6.438,19.706,20.499,35.466,38.375,44.329c-7.663,3.914-14.545,9.089-20.498,15.418
-								c-3.027,3.218-2.872,8.281,0.347,11.308c3.218,3.026,8.281,2.871,11.308-0.347c2.861-3.042,5.992-5.744,9.369-8.088
-								c4.843,13.721,17.325,23.773,31.522,23.773h1.194c14.221,0,26.691-10.773,31.248-25.35c16.893,10.59,27.701,29.458,27.701,49.641
-								v83.099l-72.764,47.215c-3.707,2.405-4.762,7.359-2.356,11.065c1.532,2.361,4.099,3.646,6.718,3.646c1.493,0,3.002-0.417,4.347-1.29
-								l76.409-49.58c2.273-1.475,3.646-4.001,3.646-6.711v-87.444c0-28.331-15.816-53.725-40.812-66.396
-								c23.671-11.814,40.41-35.658,42.05-63.429c2.258-2.047,4.221-4.452,5.791-7.157C396.404,71.54,396.741,69.607,396.399,67.735z
-								M313.47,169.876h-1.194c-9.574,0-17.663-9.28-17.663-20.265c0-0.137-0.003-0.273-0.01-0.409c6.203,1.631,12.691,2.494,19.344,2.494
-								c5.686,0,11.235-0.634,16.572-1.835C329.893,160.677,322.195,169.876,313.47,169.876z M313.946,135.696
-								c-24.123,0-45.512-14.37-54.882-35.91c11.108-3.142,19.605-12.566,21.397-24.173c4.773,0.613,9.61,0.922,14.463,0.922
-								c16.272,0,31.948-3.411,45.987-9.943c3.618,12.425,15.11,21.531,28.688,21.531c0.99,0,1.974-0.05,2.949-0.148
-								C366.907,115.155,342.701,135.696,313.946,135.696z M369.599,72.124c-7.649,0-13.872-6.221-13.872-13.869v-4.452
-								c0-2.911-1.581-5.592-4.129-7.001c-2.549-1.41-5.661-1.323-8.125,0.226c-14.077,8.837-30.865,13.508-48.55,13.508
-								c-6.916,0-13.786-0.729-20.419-2.167c-2.363-0.513-4.833,0.072-6.717,1.591c-1.883,1.519-2.978,3.808-2.978,6.227v4.853
-								c0,7.647-6.222,13.869-13.87,13.869c-0.524,0-1.042-0.029-1.554-0.086c-0.119-0.018-0.238-0.033-0.357-0.045
-								c-0.179-0.024-0.356-0.053-0.533-0.084c-0.021-0.686-0.032-1.37-0.032-2.052c0-11.1,2.785-22.088,8.055-31.783
-								c0.021-0.039,0.043-0.077,0.06-0.106c0.068-0.123,7.294-12.65,17.741-20.813c0.021-0.017,0.048-0.037,0.053-0.041
-								C286.126,20.806,300.211,16,315.105,16c10.075,0,19.753,2.191,28.764,6.512c0.156,0.075,0.387,0.18,0.689,0.313
-								c8.897,3.952,15.728,10.348,19.918,15.059c0.046,0.054,0.093,0.107,0.141,0.161c7.55,8.377,12.826,18.469,15.374,29.354
-								C377.374,70.363,373.59,72.124,369.599,72.124z M245.81,276.808c18.128-10.667,30.322-30.386,30.322-52.897
-								c0-10.13-2.47-19.696-6.837-28.125c-0.157-0.354-0.336-0.691-0.536-1.011c-10.386-19.154-30.676-32.191-53.954-32.191
-								c-23.283,0-43.577,13.041-53.96,32.204c-0.194,0.312-0.369,0.641-0.522,0.985c-4.373,8.432-6.844,18.002-6.844,28.138
-								c0,22.507,12.188,42.222,30.311,52.89c-22.433,11.597-36.643,34.617-36.643,60.093v29.178c0,2.735,1.397,5.28,3.704,6.749
-								l59.659,37.98c1.311,0.834,2.803,1.251,4.296,1.251c1.484,0,2.968-0.412,4.273-1.237l59.8-37.781
-								c2.332-1.473,3.74-4.043,3.727-6.801l-0.141-29.377C282.343,311.32,268.148,288.376,245.81,276.808z M214.805,178.584
-								c13.925,0,26.401,6.31,34.723,16.222c-10.78,3.089-22.602,4.7-34.721,4.7c-12.123,0-23.946-1.611-34.725-4.7
-								C188.404,184.894,200.881,178.584,214.805,178.584z M169.478,223.911c0-5.197,0.879-10.194,2.497-14.847
-								c13.201,4.228,27.85,6.442,42.832,6.442c14.978,0,29.625-2.214,42.828-6.442c1.618,4.653,2.497,9.65,2.497,14.847
-								c0,24.993-20.333,45.327-45.327,45.327C189.812,269.238,169.478,248.904,169.478,223.911z M229.005,283.579
-								c-1,7.568-7.638,12.684-13.644,12.684h-0.974c-6.361,0-13.425-5.38-14.34-12.82c4.728,1.172,9.672,1.795,14.757,1.795
-								C219.69,285.238,224.446,284.663,229.005,283.579z M214.822,394.58l-51.676-32.898v-24.787c0-17.591,8.888-33.653,23.275-43.119
-								c4.999,11.407,16.783,18.487,27.966,18.487h0.974c12.073,0,22.745-7.857,27.355-18.773c14.595,9.41,23.663,25.598,23.748,43.443
-								l0.12,24.944L214.822,394.58z M157.359,179.842c2.332-3.753,1.18-8.686-2.572-11.018c-2.436-1.514-4.962-2.887-7.554-4.109
-								c9.886-5.054,18.631-12.293,25.573-21.348c2.859,0.992,5.928,1.532,9.12,1.532c15.373,0,27.88-12.507,27.88-27.88V97.138
-								c0-25.272-9.654-49.207-27.183-67.394C165.144,11.61,141.678,1.076,116.548,0.082c-0.002,0-0.005,0-0.007,0
-								c-2.184-0.084-4.217-0.104-6.216-0.055c-25.018,0.604-48.617,10.73-66.45,28.512c-18.283,18.23-28.352,42.593-28.352,68.6v19.881
-								c0,15.373,12.507,27.88,27.881,27.88c3.192,0,6.26-0.539,9.118-1.531c7.647,9.974,17.483,17.745,28.622,22.819
-								c-24.685,12.982-39.953,38.112-39.953,65.94v65.484c0,2.71,1.372,5.236,3.646,6.711l72.575,47.091
-								c1.345,0.873,2.854,1.29,4.347,1.29c2.619,0,5.187-1.286,6.718-3.646c2.405-3.707,1.35-8.661-2.356-11.065l-68.93-44.726v-61.139
-								c0-18.51,8.619-35.505,23.058-46.472c4.952,14.37,17.668,25.167,31.728,25.167h1.194c15.27,0,27.458-13.822,31.75-29.264
-								c0.477,0.278,0.95,0.563,1.419,0.854C150.094,184.747,155.027,183.594,157.359,179.842z M63.19,68.063
-								c-5.172,8.784-7.906,18.838-7.906,29.076v19.881c0,3.79-1.784,7.171-4.557,9.348c-0.238,0.155-0.465,0.321-0.681,0.497
-								c-1.897,1.285-4.184,2.035-6.643,2.035c-6.551,0-11.88-5.329-11.88-11.88V97.138c0-44.413,34.784-80.043,79.185-81.117
-								c1.66-0.041,3.365-0.023,5.213,0.048c43.673,1.731,77.884,37.34,77.884,81.069v19.881c0,6.551-5.33,11.88-11.881,11.88
-								c-2.459,0-4.747-0.751-6.645-2.036c-0.215-0.175-0.441-0.34-0.678-0.495c-2.773-2.177-4.558-5.559-4.558-9.349V97.138
-								c0-28.238-21.036-52.64-48.932-56.761c-2.193-0.326-4.422,0.276-6.155,1.658c-1.733,1.382-2.816,3.42-2.99,5.63
-								c-0.439,5.592-1.453,11.106-3.022,16.457H70.083C67.25,64.122,64.627,65.621,63.19,68.063z M113.171,194.823h-1.194
-								c-9.044,0-17.921-10.979-17.921-22.166c0-0.69-0.089-1.369-0.259-2.02c6.076,1.545,12.403,2.35,18.868,2.35
-								c6.12,0,12.118-0.722,17.895-2.109C130.016,182.511,121.212,194.823,113.171,194.823z M112.665,156.987
-								c-18.646,0-35.855-8.489-47.161-22.99c3.622-4.705,5.779-10.595,5.779-16.978V97.138c0-5.893,1.254-11.698,3.652-17.016h39.783
-								c3.349,0,6.343-2.085,7.504-5.227c2-5.41,3.509-10.991,4.513-16.675c16.017,5.83,27.309,21.343,27.309,38.918v19.881
-								c0,6.383,2.157,12.273,5.78,16.978C148.519,148.499,131.311,156.987,112.665,156.987z"/>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="10px" viewBox="0 0 41.301 41.301" style="enable-background:new 0 0 41.301 41.301;" xml:space="preserve" width="100%" height="100%">
+									<path d="M20.642,0c5.698,0,10.857,2.317,14.602,6.047c3.73,3.746,6.047,8.905,6.047,14.603  c0,5.698-2.317,10.857-6.047,14.603c-3.746,3.73-8.904,6.047-14.602,6.047S9.786,38.983,6.056,35.253  C2.31,31.507,0.008,26.349,0.008,20.65c0-5.698,2.301-10.857,6.047-14.603C9.786,2.317,14.944,0,20.642,0L20.642,0z M31.166,19.523  c0.619,0,1.111,0.508,1.111,1.127c0,0.619-0.492,1.127-1.111,1.127H20.674h-0.032c-0.413,0-0.778-0.238-0.968-0.571l-0.016-0.016  l0,0l-0.016-0.032l0,0v-0.016l0,0l-0.016-0.032l0,0l-0.016-0.032l0,0v-0.016l0,0l-0.016-0.032l0,0l-0.016-0.016l0,0v-0.032l0,0  l-0.016-0.032l0,0v-0.016l0,0l-0.016-0.032l0,0v-0.032l0,0v-0.016v-0.016l-0.016-0.016l0,0v-0.032l0,0v-0.032l0,0V20.73l0,0v-0.016  l0,0v-0.032l0,0V20.65l0,0V7.206c0-0.619,0.492-1.111,1.111-1.111c0.619,0,1.127,0.492,1.127,1.111v12.317H31.166z M33.657,7.635  c-3.333-3.333-7.936-5.381-13.015-5.381S10.96,4.301,7.627,7.635C4.31,10.968,2.246,15.571,2.246,20.65  c0,5.079,2.063,9.682,5.381,13.016c3.333,3.333,7.936,5.381,13.015,5.381s9.682-2.048,13.015-5.381  c3.333-3.333,5.397-7.936,5.397-13.016C39.054,15.571,36.991,10.968,33.657,7.635L33.657,7.635z" fill="#e65a00"/>
+								</span>
+								<span class="icon_box">
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 489.8 489.8" style="enable-background:new 0 0 489.8 489.8;" xml:space="preserve" width="100%" height="100%">
+									<g fill="#e65a00">
+										<path  d="M462.1,121.3H310.5V9.9c0-5.5-4.4-9.9-9.9-9.9H27.7c-5.5,0-9.9,4.4-9.9,9.9v470
+										c0,5.5,4.4,9.9,9.9,9.9h272.9h161.5c5.5,0,9.9-4.4,9.9-9.9V131.2C472,125.7,467.6,121.3,462.1,121.3z M290.7,131.2v338.9H37.6
+										V19.8h253.1V131.2L290.7,131.2z M452.2,470H310.5V141h141.7V470z"/>
+										<path  d="M349.1,191.3h64.5c5.5,0,9.9-4.4,9.9-9.9s-4.4-9.9-9.9-9.9h-64.5c-5.5,0-9.9,4.4-9.9,9.9
+										C339.2,186.8,343.6,191.3,349.1,191.3z"/>
+										<path  d="M349.1,241h64.5c5.5,0,9.9-4.4,9.9-9.9s-4.4-9.9-9.9-9.9h-64.5c-5.5,0-9.9,4.4-9.9,9.9
+										S343.6,241,349.1,241z"/>
+										<path  d="M349.1,290.6h64.5c5.5,0,9.9-4.4,9.9-9.9s-4.4-9.9-9.9-9.9h-64.5c-5.5,0-9.9,4.4-9.9,9.9
+										S343.6,290.6,349.1,290.6z"/>
+										<path  d="M349.1,340.3h64.5c5.5,0,9.9-4.4,9.9-9.9s-4.4-9.9-9.9-9.9h-64.5c-5.5,0-9.9,4.4-9.9,9.9
+										S343.6,340.3,349.1,340.3z"/>
+										<path  d="M349.1,389.9h64.5c5.5,0,9.9-4.4,9.9-9.9s-4.4-9.9-9.9-9.9h-64.5c-5.5,0-9.9,4.4-9.9,9.9
+										C339.2,385.4,343.6,389.9,349.1,389.9z"/>
+										<path  d="M349.1,439.6h64.5c5.5,0,9.9-4.4,9.9-9.9s-4.4-9.9-9.9-9.9h-64.5c-5.5,0-9.9,4.4-9.9,9.9
+										S343.6,439.6,349.1,439.6z"/>
+										<path  d="M83.5,97c5.5,0,9.9-4.4,9.9-9.9V65.2c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C73.6,92.6,78,97,83.5,97z"/>
+										<path  d="M137.3,97c5.5,0,9.9-4.4,9.9-9.9V65.2c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C127.4,92.6,131.8,97,137.3,97z"/>
+										<path  d="M191,97c5.5,0,9.9-4.4,9.9-9.9V65.2c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C181.1,92.6,185.6,97,191,97z"/>
+										<path  d="M244.8,97c5.5,0,9.9-4.4,9.9-9.9V65.2c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C234.9,92.6,239.3,97,244.8,97z"/>
+										<path  d="M83.5,164.8c5.5,0,9.9-4.4,9.9-9.9v-22c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v22
+										C73.6,160.3,78,164.8,83.5,164.8z"/>
+										<path  d="M137.3,164.8c5.5,0,9.9-4.4,9.9-9.9v-22c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v22
+										C127.4,160.3,131.8,164.8,137.3,164.8z"/>
+										<path d="M191,164.8c5.5,0,9.9-4.4,9.9-9.9v-22c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v22
+										C181.1,160.3,185.6,164.8,191,164.8z"/>
+										<path d="M244.8,164.8c5.5,0,9.9-4.4,9.9-9.9v-22c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v22
+										C234.9,160.3,239.3,164.8,244.8,164.8z"/>
+										<path d="M83.5,232.5c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C73.6,228.1,78,232.5,83.5,232.5z"/>
+										<path d="M137.3,232.5c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C127.4,228.1,131.8,232.5,137.3,232.5z"/>
+										<path d="M191,232.5c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C181.1,228.1,185.6,232.5,191,232.5z"/>
+										<path d="M244.8,232.5c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C234.9,228.1,239.3,232.5,244.8,232.5z"/>
+										<path d="M83.5,300.3c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C73.6,295.8,78,300.3,83.5,300.3z"/>
+										<path d="M137.3,300.3c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C127.4,295.8,131.8,300.3,137.3,300.3z"/>
+										<path d="M191,300.3c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C181.1,295.8,185.6,300.3,191,300.3z"/>
+										<path d="M244.8,300.3c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C234.9,295.8,239.3,300.3,244.8,300.3z"/>
+										<path d="M83.5,368c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C73.6,363.6,78,368,83.5,368z"/>
+										<path d="M137.3,368c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C127.4,363.6,131.8,368,137.3,368z"/>
+										<path d="M191,368c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C181.1,363.6,185.6,368,191,368z"/>
+										<path d="M244.8,368c5.5,0,9.9-4.4,9.9-9.9v-21.9c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v21.9
+										C234.9,363.6,239.3,368,244.8,368z"/>
+										<path d="M83.5,435.8c5.5,0,9.9-4.4,9.9-9.9v-22c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v22
+										C73.6,431.3,78,435.8,83.5,435.8z"/>
+										<path d="M137.3,435.8c5.5,0,9.9-4.4,9.9-9.9v-22c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v22
+										C127.4,431.3,131.8,435.8,137.3,435.8z"/>
+										<path d="M191,435.8c5.5,0,9.9-4.4,9.9-9.9v-22c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v22
+										C181.1,431.3,185.6,435.8,191,435.8z"/>
+										<path d="M244.8,435.8c5.5,0,9.9-4.4,9.9-9.9v-22c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v22
+										C234.9,431.3,239.3,435.8,244.8,435.8z"/>
+									</g> 
+								</svg>
+							</span>
+							<span class="icon_box">
+								<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="100%" height="100%">
+								<g fill="#e65a00">
+									<path d="M471.149,405.797V178.111c0-13.515-10.996-24.511-24.511-24.511s-24.511,10.996-24.511,24.511v232.045
+									c-8.779,5.403-15.807,13.11-20.382,22.321H279.421v-80.068c0-13.515-10.996-24.511-24.511-24.511
+									c-13.515,0-24.511,10.996-24.511,24.511v80.068H109.167c-5.521-11.12-14.59-19.993-25.831-25.266V285.413h62.638
+									c13.515,0,24.511-10.996,24.511-24.511c0-13.515-10.996-24.511-24.511-24.511H83.336V122.221
+									c10.826-5.092,19.69-13.579,25.262-24.178h211.674c13.515,0,24.511-10.996,24.511-24.511c0-13.515-10.996-24.511-24.511-24.511
+									H109.684c-8.988-19.113-28.302-31.591-49.77-31.591c-30.334,0-55.013,24.678-55.013,55.013c0,20.698,11.378,39.244,29.413,48.688
+									v287.168c-18.034,9.444-29.413,27.991-29.413,48.688C4.902,487.322,29.58,512,59.915,512c20.916,0,40.031-12.049,49.245-30.502
+									h292.592C410.965,499.951,430.08,512,450.995,512c30.334,0,55.013-24.678,55.013-55.013
+									C506.008,434.191,491.955,413.976,471.149,405.797z M114.467,65.362h205.805c4.506,0,8.17,3.665,8.17,8.17s-3.665,8.17-8.17,8.17
+									H114.131c0.52-3.045,0.796-6.135,0.796-9.26C114.927,70.067,114.771,67.704,114.467,65.362z M145.974,252.732
+									c4.506,0,8.17,3.665,8.17,8.17c0,4.506-3.665,8.17-8.17,8.17H75.166c-4.513,0-8.17,3.657-8.17,8.17v125.193
+									c-2.342-0.304-4.705-0.461-7.081-0.461c-3.124,0-6.215,0.277-9.26,0.796V126.659c3.045,0.52,6.135,0.796,9.26,0.796
+									c2.376,0,4.739-0.157,7.081-0.461v117.567c0,4.513,3.657,8.17,8.17,8.17H145.974z M21.242,72.443
+									c0-21.324,17.348-38.672,38.672-38.672c16.499,0,31.193,10.481,36.564,26.08c1.399,4.063,2.108,8.3,2.108,12.592
+									c0,4.954-0.934,9.794-2.777,14.388v0.002c-4.19,10.435-12.683,18.518-23.304,22.174c-4.063,1.399-8.3,2.108-12.592,2.108
+									c-4.954,0-9.794-0.934-14.388-2.777c-0.002-0.001-0.003-0.001-0.005-0.002C30.772,102.413,21.242,88.327,21.242,72.443z
+									M96.166,470.477c0,0.001-0.001,0.003-0.001,0.004c-5.609,15.059-20.176,25.178-36.251,25.178
+									c-21.324,0-38.672-17.348-38.672-38.672c0-15.884,9.53-29.971,24.279-35.893c0.002-0.001,0.004-0.001,0.005-0.002
+									c4.594-1.843,9.434-2.777,14.388-2.777c4.292,0,8.529,0.709,12.592,2.108c10.984,3.782,19.607,12.192,23.66,23.075
+									c1.607,4.315,2.422,8.853,2.422,13.49S97.773,466.162,96.166,470.477z M396.599,465.157H114.311
+									c0.402-2.692,0.617-5.419,0.617-8.17s-0.215-5.478-0.617-8.17H238.57c4.513,0,8.17-3.657,8.17-8.17v-88.238
+									c0-4.506,3.665-8.17,8.17-8.17c4.506,0,8.17,3.665,8.17,8.17v88.238c0,4.513,3.657,8.17,8.17,8.17h125.348
+									c-0.402,2.692-0.617,5.419-0.617,8.17S396.197,462.466,396.599,465.157z M438.468,178.111c0-4.506,3.665-8.17,8.17-8.17
+									c4.506,0,8.17,3.665,8.17,8.17v224.003c-1.268-0.088-2.539-0.139-3.813-0.139c-4.27,0-8.456,0.479-12.528,1.43V178.111z
+									M450.995,495.66c-16.075,0-30.642-10.119-36.25-25.178c0-0.001-0.001-0.003-0.001-0.004c-1.607-4.315-2.422-8.853-2.422-13.49
+									s0.815-9.175,2.422-13.49c3.455-9.281,10.263-16.813,19.169-21.208c5.344-2.637,11.092-3.975,17.081-3.975
+									c3.342,0,6.673,0.432,9.898,1.283c16.943,4.471,28.774,19.846,28.774,37.389C489.668,478.312,472.32,495.66,450.995,495.66z"/>
+									<path d="M504.705,45.529L461.569,2.392C460.036,0.861,457.958,0,455.79,0c-2.167,0-4.245,0.862-5.778,2.394L253.664,198.84
+									l-43.19,43.19c-0.041,0.041-0.077,0.088-0.118,0.131c-0.125,0.131-0.247,0.264-0.364,0.403c-0.04,0.048-0.082,0.096-0.121,0.144
+									c-0.033,0.04-0.061,0.083-0.093,0.124c-0.09,0.118-0.179,0.236-0.263,0.359c-0.058,0.084-0.114,0.169-0.168,0.255
+									c-0.028,0.046-0.057,0.09-0.084,0.136c-0.053,0.089-0.106,0.18-0.157,0.272c-0.07,0.125-0.134,0.254-0.197,0.382
+									c-0.024,0.049-0.051,0.097-0.074,0.146c-0.027,0.059-0.052,0.119-0.077,0.179c-0.069,0.159-0.131,0.32-0.188,0.484
+									c-0.022,0.061-0.049,0.118-0.07,0.179l-10.784,32.353l-10.125,30.374l-12.097,12.097c-3.191,3.192-3.191,8.364,0,11.555
+									c1.596,1.595,3.687,2.392,5.778,2.392c2.09,0,4.182-0.797,5.778-2.392l11.9-11.9l63.022-21.007
+									c0.065-0.022,0.125-0.05,0.188-0.074c0.157-0.057,0.314-0.115,0.467-0.183c0.062-0.026,0.124-0.051,0.184-0.08
+									c0.051-0.024,0.1-0.052,0.151-0.076c0.126-0.061,0.251-0.124,0.375-0.193c0.091-0.051,0.183-0.102,0.272-0.157
+									c0.048-0.028,0.095-0.058,0.142-0.088c0.085-0.054,0.17-0.11,0.254-0.168c0.12-0.083,0.236-0.168,0.351-0.256
+									c0.044-0.034,0.089-0.064,0.132-0.099c0.05-0.04,0.099-0.083,0.148-0.125c0.132-0.11,0.257-0.225,0.38-0.343
+									c0.048-0.046,0.099-0.086,0.147-0.133l107.841-107.841c0.146-0.146,0.284-0.295,0.416-0.449L504.706,57.081
+									C507.896,53.891,507.895,48.718,504.705,45.529z M207.603,299.594l5.617-16.849l6.604-19.811l24.44,24.44L207.603,299.594z
+									M361.435,177.312c-0.145,0.145-0.282,0.293-0.414,0.446L259.388,279.39l-31.581-31.582l37.413-37.414L455.792,19.726
+									l31.582,31.581L361.435,177.312z"/>
+								</g>
 							</svg>
 						</span>
-						<span class="icon_box">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							viewBox="0 0 400.043 400.043" style="enable-background:new 0 0 400.043 400.043;" xml:space="preserve">
-							<path fill="#e65a00" d="M399.646,221.207c-3.76-30.8-31.6-53.84-45.2-63.2h0c11.52-19.52,38.48-75.36,0.56-119.36
-							c-8.451-11.616-21.66-18.837-36-19.68c-47.52,0-83.04,96.56-96.48,139.28l-8-14c-2.382-4.302-5.896-7.871-10.16-10.32l-1.12-43.2
-							c0-4.418-3.582-8-8-8s-8,3.582-8,8l1.04,39.44c-3.691,0.28-7.285,1.315-10.56,3.04c-3.096,1.741-5.816,4.079-8,6.88l-32.56-21.6
-							c-3.8-2.518-8.922-1.48-11.44,2.32c-2.518,3.8-1.48,8.922,2.32,11.44l35.68,24c-0.288,5.039,0.849,10.057,3.28,14.48l8,14.08
-							c-34.174-9.35-69.313-14.719-104.72-16c-31.44,0-52.64,7.12-63.04,21.2c-8,10.96-9.44,25.52-4,43.2
-							c17.28,56,78.8,62.56,101.44,63.04c0.72,15.04,4.72,46.72,24,66.88c11.628,11.942,27.74,18.445,44.4,17.92
-							c8.1-0.095,16.158-1.169,24-3.2c32-8,45.68-39.44,51.04-61.52c9.758,11.305,26.833,12.559,38.138,2.802
-							c8.118-7.007,11.328-18.149,8.182-28.402c11.21,3.835,22.953,5.887,34.8,6.08c16.666,0.712,32.912-5.347,45.04-16.8
-							C393.566,261.527,402.046,241.767,399.646,221.207z M193.806,362.327L193.806,362.327c-6.638,1.727-13.461,2.64-20.32,2.72
-							c-12.315,0.525-24.272-4.217-32.88-13.04c-21.04-21.68-20-63.2-20-64c0-4.418-3.582-8-8-8h-5.04c-17.12,0-74.08-3.76-88.88-51.76
-							c-3.84-12.56-3.36-22.32,1.6-29.04c7.12-9.68,24.48-14.72,50.24-14.72c44.96,0,101.76,15.44,115.52,19.36l50.32,90.96
-							C235.166,305.927,228.286,353.607,193.806,362.327z M280.046,301.687c-1.642,5.872-7.734,9.301-13.606,7.658
-							c-2.866-0.802-5.287-2.727-6.714-5.338l-8-14.56l-53.04-96l-17.04-30.72c-2.928-5.35-1.001-12.059,4.32-15.04
-							c1.64-0.907,3.486-1.376,5.36-1.36c4.02-0.01,7.728,2.165,9.68,5.68l78.16,141.28C280.57,295.857,280.887,298.882,280.046,301.687
-							z M363.166,268.567h0.24c-9.031,8.333-21.002,12.736-33.28,12.24c-16.089-0.68-31.851-4.77-46.24-12l-50.56-90.96
-							c16-56.56,52.08-142.88,85.68-142.88c9.679,1.003,18.441,6.173,24,14.16c38.24,44.32-4.08,104-5.92,106.64
-							c-2.583,3.584-1.772,8.584,1.812,11.168c0.215,0.155,0.438,0.299,0.668,0.432c0,0,40.48,24,44.24,56
-							C385.486,238.567,378.606,253.767,363.166,268.567z"/>
-						</svg>
-					</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 offset-lg-2 col-lg-4 col-md-5 offset-md-1 col-sm-12 offset-sm-0">
+				<div class="about-right wow fadeInUp" data-wow-duration="1.5s">
+					<span class="about-right_logo"></span>
+					<span class="about-right_label">27 лет</span>				
+					<p class="about-right_text">опыт в строительстве</p>
+					<span class="about-right_label">3 740 квартирт</span>
+					<p class="about-right_text">реализовано до 2018 года</p>
+					<span class="about-right_label">42 обьекта</span>
+					<p class="about-right_text">успешно реализовано</p>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 offset-md-2">
-			<div class="about-right">
-				<span class="about-right_label">27 лет</span>
-				<p class="about-right_text">опыт в строительстве</p>
-				<span class="about-right_label">3 740 квартирт</span>
-				<p class="about-right_text">реализовано до 2018 года</p>
-				<span class="about-right_label">218 000 м. кв.</span>
-				<p class="about-right_text">опыт в строительстве</p>
-				<span class="about-right_label">42 обьекта</span>
-				<p class="about-right_text">успешно реализовано</p>
-			</div>
-		</div>
 	</div>
-</div>
 </section>
 <section class="s-soon">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-5 offset-md-5">
-				<div class="soon">
-					<div class="line soon-line line-inverse"></div>
-					<h2 class="title title-lite soon-title">скоро мы построим<br><strong>ваш дом</strong></h2>
+			<div class="col-xl-5 offset-xl-5 col-lg-6 offset-lg-5 col-md-col-md-8 offset-md-4">
+				<div class="soon wow fadeInRight" data-wow-duration="1.5s">
+					<span class="section-title">
+						<div class="line soon-line line-inverse"></div>
+						<h2 class="title title-lite soon-title">скоро мы построим<br><strong>ваш дом</strong></h2>
+					</span>
 					<p class="soon-text icon-text">Застройщик ПАО "Сургутстройтрест" перешел под управление новой структуры. <br><br> Проект ЖК "Западный квартал" (Гидронамыв) был полностью профинансирован. <br> <br>Строительство дома завершится точно в срок в 4 квартале 2019 года</p>
-					<p><a href="#" target="_blank" class="soon-link">проектная декларация</a></p>
-					<p><a href="#" target="_blank" class="soon-link">декабрь 2018</a></p>
-					<p><a href="#" target="_blank" class="soon-link">ноябрь 2018</a></p>
-					<p><a href="#" target="_blank" class="soon-link">октбрь 2018</a></p>
+
+					<p><a href="#project" class="soon-link soon-link__project" data-effect="mfp-move-horizontal">проектная декларация</a></p>
+					<div class="soon-link__box popup-gallery" data-effect="mfp-move-horizontal">
+						<a href="/img/bg-1.jpg" target="_blank" class="soon-link" title="январь 2018" data-effect="mfp-move-horizontal">январь 2018</a>
+						<a href="/img/bg-2.jpg" target="_blank" class="soon-link" title="февраль 2018" data-effect="mfp-move-horizontal">февраль 2018</a>
+						<a href="/img/bg-3.jpg" target="_blank" class="soon-link" title="март 2018" data-effect="mfp-move-horizontal">март 2018</a>
+						<a href="/img/bg-4.jpg" target="_blank" class="soon-link" title="апрель 2018" data-effect="mfp-move-horizontal">апрель 2018</a>
+						<a href="/img/bg-1.jpg" target="_blank" class="soon-link" title="май 2018" data-effect="mfp-move-horizontal">май 2018</a>
+						<a href="/img/bg-2.jpg" target="_blank" class="soon-link" title="июнь 2018" data-effect="mfp-move-horizontal">июнь 2018</a>
+						<a href="/img/bg-3.jpg" target="_blank" class="soon-link" title="июль 2018" data-effect="mfp-move-horizontal">июль 2018</a>
+						<a href="/img/bg-4.jpg" target="_blank" class="soon-link" title="сентябрь 2018" data-effect="mfp-move-horizontal">сентябрь 2018</a>
+						<a href="/img/bg-1.jpg" target="_blank" class="soon-link" title="октябрь 2018" data-effect="mfp-move-horizontal">октябрь 2018</a>
+						<a href="/img/bg-2.jpg" target="_blank" class="soon-link" title="ноябрь 2018" data-effect="mfp-move-horizontal">ноябрь 2018</a>
+						<a href="/img/bg-3.jpg" target="_blank" class="soon-link" title="декабрь 2018" data-effect="mfp-move-horizontal">декабрь 2018</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="soon-svg svg-box">
+	<div class="soon-svg svg-box wow fadeInLeft" data-wow-duration="2s">
+		<svg width="100%" height="100%">
+			<circle r="350" cx="35vw" cy="400"  fill="#f1f1f1"/>
+		</svg>
+	</div>
+	<div class="soon-svg svg-box wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="2s">
 		<svg width="100%" height="100%">
 			<pattern id="soonsvg" width="100%" height="100%">
 				<image xlink:href=img/bg-1.jpg y="10" x="-170" width="750"/>
 			</pattern>
-			<circle r="350" cx="35vw" cy="400"  fill="#f1f1f1"/>
 			<circle r="220" cx="22vw" cy="370"  fill="url(#soonsvg)" stroke-width="20" stroke="#fff"/>
 		</svg>
 	</div>
 </section>
-<section class="s-question">
+<section class="s-comment">
+	<div class="comment-svg svg-box wow fadeInLeft" data-wow-duration="1.5s">
+		<svg width="100%" height="100%">
+			<circle r="500" cx="0" cy="450"  stroke="#fff" stroke-width="10" fill="#f1f1f1"/>
+		</svg>
+	</div>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="question">
-					<div class="line question-line"></div>
-					<h2 class="title title-lite question-title">остались<br><strong>вопросы?</strong></h2>
-					<p class="question-text icon-text">Оставьте свой вопрос и наш менеджер свяжется с вами и вежливо проконсультирует </p>
-					<form action="#" class="question-form" name="form_question">
-						<div class="question-form_box">
-							<div class="question-form_box__input">
-								<input type="text" class="question-form_input form-input"  placeholder="Ваше имя*">
-								<input type="tel" class="question-form_input form-input" placeholder="Ваш телефон*">
-							</div>
-							<div class="question-form_box__textarea">
-								<textarea  cols="10" rows="4" class="question-form_input form-input">напишите вопрос который вас интеесует</textarea>
-							</div>
+		<div class="row justify-content-between">
+			<div class="col-xl-3 col-md-6 col-sm-12">
+				<span class="section-title wow fadeInLeft">
+					<div class="line comment-line line-inverse"></div>
+					<h2 class="title title-lite comment-title">что говорят<br><strong>о нас</strong></h2>
+				</span>
+			</div>
+			<div class="col-xl-3 col-md-6 col-sm-12">
+				<div class="icon comment-icon">
+					<div class="icon_box comment-icon_box">
+						<span class="comment-icon_box__social comment-icon_box__social__vk">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="100%" height="100%" viewBox="0 0 548.358 548.358" style="enable-background:new 0 0 548.358 548.358;"
+							xml:space="preserve" fill="#ffffff">
+							<path d="M545.451,400.298c-0.664-1.431-1.283-2.618-1.858-3.569c-9.514-17.135-27.695-38.167-54.532-63.102l-0.567-0.571
+							l-0.284-0.28l-0.287-0.287h-0.288c-12.18-11.611-19.893-19.418-23.123-23.415c-5.91-7.614-7.234-15.321-4.004-23.13
+							c2.282-5.9,10.854-18.36,25.696-37.397c7.807-10.089,13.99-18.175,18.556-24.267c32.931-43.78,47.208-71.756,42.828-83.939
+							l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712c-4.764-1.427-10.853-1.663-18.278-0.712l-82.224,0.568
+							c-1.332-0.472-3.234-0.428-5.712,0.144c-2.475,0.572-3.713,0.859-3.713,0.859l-1.431,0.715l-1.136,0.859
+							c-0.952,0.568-1.999,1.567-3.142,2.995c-1.137,1.423-2.088,3.093-2.848,4.996c-8.952,23.031-19.13,44.444-30.553,64.238
+							c-7.043,11.803-13.511,22.032-19.418,30.693c-5.899,8.658-10.848,15.037-14.842,19.126c-4,4.093-7.61,7.372-10.852,9.849
+							c-3.237,2.478-5.708,3.525-7.419,3.142c-1.715-0.383-3.33-0.763-4.859-1.143c-2.663-1.714-4.805-4.045-6.42-6.995
+							c-1.622-2.95-2.714-6.663-3.285-11.136c-0.568-4.476-0.904-8.326-1-11.563c-0.089-3.233-0.048-7.806,0.145-13.706
+							c0.198-5.903,0.287-9.897,0.287-11.991c0-7.234,0.141-15.085,0.424-23.555c0.288-8.47,0.521-15.181,0.716-20.125
+							c0.194-4.949,0.284-10.185,0.284-15.705s-0.336-9.849-1-12.991c-0.656-3.138-1.663-6.184-2.99-9.137
+							c-1.335-2.95-3.289-5.232-5.853-6.852c-2.569-1.618-5.763-2.902-9.564-3.856c-10.089-2.283-22.936-3.518-38.547-3.71
+							c-35.401-0.38-58.148,1.906-68.236,6.855c-3.997,2.091-7.614,4.948-10.848,8.562c-3.427,4.189-3.905,6.475-1.431,6.851
+							c11.422,1.711,19.508,5.804,24.267,12.275l1.715,3.429c1.334,2.474,2.666,6.854,3.999,13.134c1.331,6.28,2.19,13.227,2.568,20.837
+							c0.95,13.897,0.95,25.793,0,35.689c-0.953,9.9-1.853,17.607-2.712,23.127c-0.859,5.52-2.143,9.993-3.855,13.418
+							c-1.715,3.426-2.856,5.52-3.428,6.28c-0.571,0.76-1.047,1.239-1.425,1.427c-2.474,0.948-5.047,1.431-7.71,1.431
+							c-2.667,0-5.901-1.334-9.707-4c-3.805-2.666-7.754-6.328-11.847-10.992c-4.093-4.665-8.709-11.184-13.85-19.558
+							c-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267
+							c-4.952-10.185-9.329-20.037-13.134-29.554c-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-0.859c-0.95-0.76-2.475-1.567-4.567-2.427
+							c-2.095-0.859-4.281-1.475-6.567-1.854l-78.229,0.568c-7.994,0-13.418,1.811-16.274,5.428l-1.143,1.711
+							C0.288,140.146,0,141.668,0,143.763c0,2.094,0.571,4.664,1.714,7.707c11.42,26.84,23.839,52.725,37.257,77.659
+							c13.418,24.934,25.078,45.019,34.973,60.237c9.897,15.229,19.985,29.602,30.264,43.112c10.279,13.515,17.083,22.176,20.412,25.981
+							c3.333,3.812,5.951,6.662,7.854,8.565l7.139,6.851c4.568,4.569,11.276,10.041,20.127,16.416
+							c8.853,6.379,18.654,12.659,29.408,18.85c10.756,6.181,23.269,11.225,37.546,15.126c14.275,3.905,28.169,5.472,41.684,4.716h32.834
+							c6.659-0.575,11.704-2.669,15.133-6.283l1.136-1.431c0.764-1.136,1.479-2.901,2.139-5.276c0.668-2.379,1-5,1-7.851
+							c-0.195-8.183,0.428-15.558,1.852-22.124c1.423-6.564,3.045-11.513,4.859-14.846c1.813-3.33,3.859-6.14,6.136-8.418
+							c2.282-2.283,3.908-3.666,4.862-4.142c0.948-0.479,1.705-0.804,2.276-0.999c4.568-1.522,9.944-0.048,16.136,4.429
+							c6.187,4.473,11.99,9.996,17.418,16.56c5.425,6.57,11.943,13.941,19.555,22.124c7.617,8.186,14.277,14.271,19.985,18.274
+							l5.708,3.426c3.812,2.286,8.761,4.38,14.853,6.283c6.081,1.902,11.409,2.378,15.984,1.427l73.087-1.14
+							c7.229,0,12.854-1.197,16.844-3.572c3.998-2.379,6.373-5,7.139-7.851c0.764-2.854,0.805-6.092,0.145-9.712
+							C546.782,404.25,546.115,401.725,545.451,400.298z"/></svg></span>
 						</div>
-						<p class="question-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="question-form_link form-link"
-							target="_blank">политикой обработки персональных данных</a></p>
-							<button class="button question-form_btn" type="submit">отправить заявку</button>
-						</form>			
+						<div class="icon_box comment-icon_box">
+							<span class="comment-icon_box__social comment-icon_box__social__od">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								width="100%" height="100%" viewBox="0 0 95.481 95.481" style="enable-background:new 0 0 95.481 95.481;"
+								xml:space="preserve" fill="#ffffff">
+								<path d="M43.041,67.254c-7.402-0.772-14.076-2.595-19.79-7.064c-0.709-0.556-1.441-1.092-2.088-1.713
+								c-2.501-2.402-2.753-5.153-0.774-7.988c1.693-2.426,4.535-3.075,7.489-1.682c0.572,0.27,1.117,0.607,1.639,0.969
+								c10.649,7.317,25.278,7.519,35.967,0.329c1.059-0.812,2.191-1.474,3.503-1.812c2.551-0.655,4.93,0.282,6.299,2.514
+								c1.564,2.549,1.544,5.037-0.383,7.016c-2.956,3.034-6.511,5.229-10.461,6.761c-3.735,1.448-7.826,2.177-11.875,2.661
+								c0.611,0.665,0.899,0.992,1.281,1.376c5.498,5.524,11.02,11.025,16.5,16.566c1.867,1.888,2.257,4.229,1.229,6.425
+								c-1.124,2.4-3.64,3.979-6.107,3.81c-1.563-0.108-2.782-0.886-3.865-1.977c-4.149-4.175-8.376-8.273-12.441-12.527
+								c-1.183-1.237-1.752-1.003-2.796,0.071c-4.174,4.297-8.416,8.528-12.683,12.735c-1.916,1.889-4.196,2.229-6.418,1.15
+								c-2.362-1.145-3.865-3.556-3.749-5.979c0.08-1.639,0.886-2.891,2.011-4.014c5.441-5.433,10.867-10.88,16.295-16.322
+								C42.183,68.197,42.518,67.813,43.041,67.254z"/>
+								<path d="M47.55,48.329c-13.205-0.045-24.033-10.992-23.956-24.218C23.67,10.739,34.505-0.037,47.84,0
+								c13.362,0.036,24.087,10.967,24.02,24.478C71.792,37.677,60.889,48.375,47.55,48.329z M59.551,24.143
+								c-0.023-6.567-5.253-11.795-11.807-11.801c-6.609-0.007-11.886,5.316-11.835,11.943c0.049,6.542,5.324,11.733,11.896,11.709
+								C54.357,35.971,59.573,30.709,59.551,24.143z"/></svg>
+							</span>
+						</div>
+						<div class="icon_box comment-icon_box">
+							<span class="comment-icon_box__social comment-icon_box__social__inst">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="100%" height="100%" fill="#ffffff">
+								<path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+								C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+								h192c61.76,0,112,50.24,112,112V352z"/>
+								<path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+								c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
+								<circle cx="393.6" cy="118.4" r="17.056"/>
+							</svg>
+						</span>
 					</div>
 				</div>
-				<div class="col-md-3 offset-md-2">
-					<div class="manager">
-						<span class="manager-foto">
-							<div class="manager-svg svg-box">
+			</div>
+		</div>
+		<div class="comment">
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-6">
+					<div class="comment-box wow fadeInLeft" data-wow-delay="0.4s">
+						<div class="comment-top">
+							<span class="comment-top_img">
 								<svg width="100%" height="100%">
-									<pattern id="managersvg" width="100%" height="100%">
-										<image xlink:href=img/manager.jpg y="0" x="0" width="160"/>
+									<pattern id="commentsvg" width="100%" height="100%">
+										<image xlink:href=img/comment-1.jpg y="0" x="0" width="100"/>
 									</pattern>
-									<circle r="80" cx="50%" cy="50%"  fill="url(#managersvg)" stroke-width="10" stroke="#fff"/>
+									<circle r="50" cx="50%" cy="50%"  fill="url(#commentsvg)" stroke-width="5" stroke="#fff"/>
 								</svg>
 							</span>
-							<h4 class="title-lite manager-title">Вам ответит менеджер<br><strong>Петрова Анастасия Михайловна</strong></h4>
-							<p class="manager-text icon-text">Как только вы отправите сообщение, менеджерполучит СМС-оповещение с вашим вопросом, после чего перезвонит</p>
+							<div class="comment-top-left">
+								<h4 class="comment-top_title">Алексей</h4>
+								<p class="comment-top_date icon-text">21 Июля 2018г. 15:51</p>
+							</div>
 						</div>
+						<p class="comment-text icon-text">Здравствуйте! Хочу поделиться своим скромным мнением об этом ЖК. Семьей пока не обзавелся, поэтому выбирал для себя, выбирал долго и выбрал именно здесь. Хоть моя квартира еще не готова, но это как говорится дело времени.</p>
+						<p class="icon-text comment-text_bottom">Источник: <a href="#" class="comment-link"> flaump.ru</a></p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6">
+					<div class="comment-box wow fadeInUp">
+						<div class="comment-top">
+							<span class="comment-top_img">
+								<svg width="100%" height="100%">
+									<pattern id="commentsvg-2" width="100%" height="100%">
+										<use xlink:href=#user y="-10" x="25" width="50"/>
+									</pattern>
+									<circle r="50" cx="50%" cy="50%"  fill="url(#commentsvg-2)" stroke-width="5" stroke="#fff"/>
+								</svg>
+							</span>
+							<div class="comment-top-left">										
+								<h4 class="comment-top_title">Алексей</h4>
+								<p class="comment-top_date icon-text">21 Июля 2018г. 15:51</p>
+							</div>
+						</div>
+						<p class="comment-text icon-text">Здравствуйте! Хочу поделиться своим скромным мнением об этом ЖК. Семьей пока не обзавелся, поэтому выбирал для себя, выбирал долго и выбрал именно здесь. Хоть моя квартира еще не готова, но это как говорится дело времени.</p>
+						<p class="icon-text comment-text_bottom">Источник: <a href="#" class="comment-link"> flaump.ru</a></p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+					<div class="comment-box wow fadeInRight" data-wow-delay="0.4s">
+						<div class="comment-top">
+							<span class="comment-top_img">
+								<svg width="100%" height="100%">
+									<pattern id="commentsvg-3" width="100%" height="100%">
+										<image xlink:href=img/comment-2.jpg y="0" x="0" width="100"/>
+									</pattern>
+									<circle r="50" cx="50%" cy="50%"  fill="url(#commentsvg-3)" stroke-width="5" stroke="#fff"/>
+								</svg>
+							</span>
+							<div class="comment-top-left">										
+								<h4 class="comment-top_title">Алексей</h4>
+								<p class="comment-top_date icon-text">21 Июля 2018г. 15:51</p>
+							</div>
+						</div>
+						<p class="comment-text icon-text">Здравствуйте! Хочу поделиться своим скромным мнением об этом ЖК. Семьей пока не обзавелся, поэтому выбирал для себя, выбирал долго и выбрал именно здесь. Хоть моя квартира еще не готова, но это как говорится дело времени.</p>
+						<p class="icon-text comment-text_bottom">Источник: <a href="#" class="comment-link"> flaump.ru</a></p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="s-comment">
-			<div class="comment-svg svg-box">
-				<svg width="100%" height="100%">
-					<circle r="500" cx="0" cy="450"  stroke="#fff" stroke-width="10" fill="#f1f1f1"/>
-				</svg>
-			</div>
-			<div class="container">
-				<div class="line comment-line line-inverse"></div>
-				<h2 class="title title-lite comment-title">что говорят<br><strong>о нас</strong></h2>
-				<div class="comment">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="comment-box">
-								<div class="comment-top">
-									<span class="comment-top_img">
-										<svg width="100%" height="100%">
-											<pattern id="commentsvg" width="100%" height="100%">
-												<image xlink:href=img/comment-1.jpg y="0" x="0" width="100"/>
-											</pattern>
-											<circle r="50" cx="50%" cy="50%"  fill="url(#commentsvg)" stroke-width="5" stroke="#fff"/>
-										</svg>
-									</span>
-									<div class="comment-top-left">
-										<h4 class="comment-top_title">Алексей</h4>
-										<p class="comment-top_date icon-text">21 Июля 2018г. 15:51</p>
-									</div>
-								</div>
-								<p class="comment-text icon-text">Здравствуйте! Хочу поделиться своим скромным мнением об этом ЖК. Семьей пока не обзавелся, поэтому выбирал для себя, выбирал долго и выбрал именно здесь. Хоть моя квартира еще не готова, но это как говорится дело времени.</p>
-								<p class="icon-text comment-text_bottom">Источник: <a href="#" class="comment-link"> flaump.ru</a></p>
-							</div>
+		</div>
+		<a href="#comment" class="button comment-btn" data-effect="mfp-move-horizontal">оставить отзыв</a>
+	</div>
+</section>
+<section class="s-question">
+	<div class="container">
+				<span class="d-lg-none d-xl-none section-title-md-center">
+							<div class="line question-line"></div>
+							<h2 class="title title-lite question-title">остались<br><strong>вопросы?</strong></h2>
+					</span>
+		<div class="row justify-content-md-center">
+			<div class="col-xl-3 offset-xl-2 col-lg-6 col-md-8 d-lg-none d-xl-none">
+				<div class="manager">
+					<div class="manager-foto">
+						<div class="manager-svg svg-box">
+							<svg width="100%" height="100%">
+								<pattern id="managersvgtop" width="100%" height="100%">
+									<image xlink:href=img/manager.jpg y="0" x="0" width="160"/>
+								</pattern>
+								<circle r="80" cx="50%" cy="50%"  fill="url(#managersvgtop)" stroke-width="10" stroke="#fff"/>
+							</svg>
 						</div>
-						<div class="col-md-4">
-							<div class="comment-box">
-								<div class="comment-top">
-									<span class="comment-top_img">
-										<svg width="100%" height="100%">
-											<pattern id="commentsvg-2" width="100%" height="100%">
-												<use xlink:href=#user y="-10" x="25" width="50"/>
-											</pattern>
-											<circle r="50" cx="50%" cy="50%"  fill="url(#commentsvg-2)" stroke-width="5" stroke="#fff"/>
-										</svg>
-									</span>
-									<div class="comment-top-left">										
-										<h4 class="comment-top_title">Алексей</h4>
-										<p class="comment-top_date icon-text">21 Июля 2018г. 15:51</p>
-									</div>
-								</div>
-								<p class="comment-text icon-text">Здравствуйте! Хочу поделиться своим скромным мнением об этом ЖК. Семьей пока не обзавелся, поэтому выбирал для себя, выбирал долго и выбрал именно здесь. Хоть моя квартира еще не готова, но это как говорится дело времени.</p>
-								<p class="icon-text comment-text_bottom">Источник: <a href="#" class="comment-link"> flaump.ru</a></p>
-							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="comment-box">
-								<div class="comment-top">
-									<span class="comment-top_img">
-										<svg width="100%" height="100%">
-											<pattern id="commentsvg-3" width="100%" height="100%">
-												<image xlink:href=img/comment-2.jpg y="0" x="0" width="100"/>
-											</pattern>
-											<circle r="50" cx="50%" cy="50%"  fill="url(#commentsvg-3)" stroke-width="5" stroke="#fff"/>
-										</svg>
-									</span>
-									<div class="comment-top-left">										
-										<h4 class="comment-top_title">Алексей</h4>
-										<p class="comment-top_date icon-text">21 Июля 2018г. 15:51</p>
-									</div>
+						<h4 class="title-lite manager-title">Вам ответит менеджер<br><strong>Петрова Анастасия Михайловна</strong></h4>
+						<p class="manager-text icon-text">Как только вы отправите сообщение, менеджерполучит СМС-оповещение с вашим вопросом, после чего перезвонит</p>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-8">
+					<span class="section-title d-none d-lg-block d-xl-block">
+							<div class="line question-line"></div>
+							<h2 class="title title-lite question-title">остались<br><strong>вопросы?</strong></h2>
+					</span>
+					<div class="question">
+						<p class="question-text icon-text">Оставьте свой вопрос и наш менеджер свяжется с вами и вежливо проконсультирует </p>
+						<form class="question-form" name="form-question">
+							<div class="question-form_box">
+								<div class="question-form_box__input">
+									<input type="text" class="question-form_input form-input" name="name" placeholder="Ваше имя*">
+									<input type="tel" class="question-form_input form-input" name="phone" placeholder="Ваш телефон*" require="">
+									<input type="hidden" name="question">
 								</div>
-								<p class="comment-text icon-text">Здравствуйте! Хочу поделиться своим скромным мнением об этом ЖК. Семьей пока не обзавелся, поэтому выбирал для себя, выбирал долго и выбрал именно здесь. Хоть моя квартира еще не готова, но это как говорится дело времени.</p>
-								<p class="icon-text comment-text_bottom">Источник: <a href="#" class="comment-link"> flaump.ru</a></p>
+								<div class="question-form_box__textarea">
+									<textarea  cols="10" rows="4" class="question-form_input form-input" name="text" placeholder="напишите вопрос который вас интеесует"></textarea>
+								</div>
+							</div>
+							<p class="question-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="question-form_link form-link"
+								target="_blank">политикой обработки персональных данных</a></p>
+								<button class="button question-form_btn" type="submit">отправить заявку</button>
+							</form>			
+						</div>
+					</div>
+					<div class="col-xl-3 offset-xl-2 col-lg-6 col-md-12 d-none d-lg-block">
+						<div class="manager">
+							<div class="manager-foto">
+								<div class="manager-svg svg-box">
+									<svg width="100%" height="100%">
+										<pattern id="managersvg" width="100%" height="100%">
+											<image xlink:href=img/manager.jpg y="0" x="0" width="160"/>
+										</pattern>
+										<circle r="80" cx="50%" cy="50%"  fill="url(#managersvg)" stroke-width="10" stroke="#fff"/>
+									</svg>
+								</div>
+								</div>
+								<h4 class="title-lite manager-title">Вам ответит менеджер<br><strong>Петрова Анастасия Михайловна</strong></h4>
+								<p class="manager-text icon-text">Как только вы отправите сообщение, менеджерполучит СМС-оповещение с вашим вопросом, после чего перезвонит</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<a href="#" class="button comment-btn">оставить отзыв</a>
-			</div>
-		</section>
-		<section class="s-map">
-			<div class="map">
-				<div class="map-item">
-				<div class="line map-line"></div>
-				<h2 class="title title-lite map-title">мы находимся<br><strong>здесь</strong></h2>
-				<ul class="map-box">
-					<li class="map-box_item list-style-img icon-text">+7 909 <strong class="map-title__big"> 954-43-43</strong></li>
-					<li class="map-box_item icon-text list-style-img">Офис продаж: г. Сургут, ул. Университетская 19</li>
-					<li class="map-box_item icon-text list-style-img"><strong>пн-пт с 9:00 до 18:00</strong></li>
-				</ul>
-				</div>		
-			</div>	
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1919.1172180154804!2d73.42718841615064!3d61.24902678237123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x437399d873ac67b7%3A0x5857f40af8831118!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgtGB0LrQsNGPINGD0LsuLCAxOSwg0KHRg9GA0LPRg9GCLCDQpdCw0L3RgtGLLdCc0LDQvdGB0LjQudGB0LrQuNC5INCw0LLRgtC-0L3QvtC80L3Ri9C5INC-0LrRgNGD0LMsIDYyODQwNg!5e0!3m2!1sru!2sru!4v1549694259322" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</section>
-		<section class="s-bottom white-text">
+			</section>
+		<section class="s-map" style="background-image: url(img/bg-map.jpg);">
 			<div class="container">
 				<div class="row">
-					<div class="content">
-						<div class="row justify-content-between">
-							<div class="col-md-6">
-								<div class="line content-line"></div>
-								<h1 class="title content-title">РАСПРОДАЖА КВАРТИР<br>В НОВОМ ДОМЕ</h1>
-								<p class="content-subtitle">в п.Белый Яр</p>
-								<span class="content-price">от <strong>50 000 <i class="fas fa-ruble-sign"></i></strong> <strong> 45 000 <i class="fas fa-ruble-sign"></i> м<sup>2</sup></strong></span>
-								<ul class="content-icon">
-									<li class="content-icon_item list-style-img">Срок сдачи <br> IV квартал 2019</li>
-									<li class="content-icon_item list-style-img">Все нужное <br>рядом</li>
-									<li class="content-icon_item list-style-img">5 км от <br>Сургута</li>
-									<li class="content-icon_item list-style-img">Гибкие условия <br>приобетения</li>
-								</ul>	
-								<p class="content-text">Застройщик ПАО "Сургутстройтрест" перешел под управление новой структуры. Проект ЖК "Западный квартал" (Гидронамыв) был полностью профинансирован. Строительство дома завершится точно в срок в 4 квартале 2019 года.</p>		
-							</div>
-							<div class="col-md-3">
-								<div class="formhead">
-									<div class="line formhead-line"></div>
-									<h3 class="title formhead-title">Запишитесь на экскурсию <br>прямо сейчас и получите<br>
-										<strong>СПЕЦИАЛЬНЫЙ ПОДАРОК</strong></h3>
-										<form action="#" class="formhead-form" name="form_header">
-											<input type="text" class="formhead-form_input form-input"  placeholder="Ваше имя*">
-											<input type="tel" class="formhead-form_input form-input" placeholder="Ваш телефон*">
-											<p class="formhead-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="formhead-form_link form-link"
-												target="_blank">политикой обработки персональных данных</a></p>
-												<button class="button formhead-form_btn" type="submit">отправить заявку</button>
-											</form>
-										</div>
-									</div>
+					<div class="col-xl-5">
+						<div class="map">
+							<div class="buy-box map-box wow fadeInLeft">
+								<div class="buy-box_left buy-box_left__one map-box__left">
+									<span class="buy-box_img map-box__number">1</span>
 								</div>
-							</div>
-						</div>
+								<div class="buy-box_right map-box__right">
+									<p class="buy-box_text icon-text map-box__text">Позвоните по номеру + 7 (909)<strong>954-43-43</strong><br> или оставьте заявку <a href="#callback" class="link-text" data-effect="mfp-move-horizontal">здесь</button>
+									</p>
+								</div>
+							</div>		
+							<div class="buy-box map-box wow fadeInLeft" data-wow-delay="0.2s">
+								<div class="buy-box_left buy-box_left__two map-box__left">
+									<span class="buy-box_img map-box__number">2</span>
+								</div>
+								<div class="buy-box_right map-box__right">
+									<p class="buy-box_text icon-text map-box__text">Приезжайте на экскурсию в отдел продаж по адресу <strong>ул.Университетская 19</strong> или на точку производства в п.Белый Яр по адресу <strong>Какойтоадрес 23.</strong><br>
+										Режим работы <strong>пн-пт с 9:00 до 18:00</strong>
+									</p>
+								</div>
+							</div>	
+							<div class="buy-box map-box wow fadeInLeft" data-wow-delay="0.4s">
+								<div class="buy-box_left buy-box_left__three map-box__left">
+									<span class="buy-box_img map-box__number">3</span>
+								</div>
+								<div class="buy-box_right map-box__right">
+									<p class="buy-box_text icon-text map-box__text">Мы проведем вам экскурсию и расскажем все об особенностях жилого комплекса
+									</p>
+								</div>
+							</div>			
+						</div>	
 					</div>
-					<div class="content-svg bg-svg">
-					<svg width="1200" height="100%">
-						<pattern id="bg-svg_img" width="100%" height="100%">
-							<image xlink:href=/img/bg-1.jpg y="100" x="-200" width="1900"/>
-						</pattern>
-						<circle r="650" cx="700" cy="50%"  fill="url(#bg-svg_img)" stroke-width="40" stroke="#fff"/>
-						<circle r="650" cx="700" cy="50%"  fill="#00070d" fill-opacity=".3" stroke-width="40" stroke="#fff"/>
-					</svg>
 				</div>
+			</div>
+		</section>
+		<section class="s-bottom white-text">
+
 				</section>
 				<footer class="s-footer white-text">
 					<div class="container">
 						<div class="header-top">
 							<div class="row justify-content-between">
-								<div class="col-md-2">
-									<div class="logo">
-										<img class="logo-img img-responsive footer-logo" src="img/logo.png" alt="Западный квартал">
+								<div class="col-xl-2 col-lg-3 col-12">
+									<div class="logo footer-logo_box">
+										<a href="#" class="logo-img__link">
+											<img class="logo-img img-responsive footer-logo" src="img/logo.png" alt="Западный квартал">
+										</a>
 									</div>
 								</div>
-								<div class="col-md-2">
+								<div class="col-xl-2 col-lg-3 col-12">
 									<span class="logo-text footer-text">КВАРТИРЫ ОТ ЗАСТРОЙЩИКА В НОВОМ ЖИЛОМ МИКРОРАЙОНЕ В п.Белый ЯР</span>
 								</div>
-								<div class="col-md-4">
+								<div class="col-xl-4 col-lg-3 col-12">
 									<ul class="callback-address footer-address">
 										<li class="callback-address_text callback-address__map">Офис продаж: г. Сургут, ул. Университетская 19</li>
 										<li class="callback-address_text callback-address__clock"><strong>пн-пт с 9:00 до 18:00</strong></li>
 									</ul>						
 								</div>
-								<div class="col-md-3">
+								<div class="col-xl-3 col-lg-3 col-12">
 									<div class="callback footer-callback">
-										<a href="tel:7909544343" class="callback-phone footer-callback_phone">+ 7 909 <span class="callback-phone_big">954-43-43</span></a>
-										<button class="button callback-btn">обратный звонок</button>
-
+										<a href="tel:7909544343" class="callback-phone">+ 7 909 <strong class="callback-phone_big">954-43-43</strong></a>
+										<a href="#callback" class="button callback-btn" data-effect="mfp-move-horizontal">обратный звонок</a>
 									</div>
 								</div>
 							</div>
@@ -911,12 +1141,12 @@
 				<section class="s-copyright">
 					<div class="container">
 						<div class="row justify-content-between">
-							<div class="col-md-2">
+							<div class="col-xl-2 col-lg-6 col-12">
 								<div class="copyright-box">
 									<p class="copyright-box__text">© 2019, ООО «ДСК1»</p>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-xl-3 col-lg-6 col-12">
 								<!-- Start Sells Copyright -->
 								<div class="sells-copyright-block sells-copyright-right sells-copyright-light" style="display: none">
 									<div class="sells-copyright-block__pop-up">
@@ -936,67 +1166,94 @@
 				</section>
 
 <!-- modal "CALLBACK" -->
-<div class="modal-overlay callback-overlay">
-	<div class="modal callback-modal">
-		<a class="close-modal callback-close-modal">
-			<svg viewBox="0 0 20 20">
-				<path fill="#333" fill-opacity="0.5" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
-			</svg>
-		</a>
-		<div class="modal-content callback-modal-content">
+<div id="callback" class="white-popup popup-callback mfp-with-anim mfp-hide">
 			<div class="formhead form-popup">
 				<div class="line form-popup_line"></div>
 				<h3 class="title form-popup_title"><strong>закажите обратный звонок</strong></h3>
 				<p class="form-popup_text icon-text">Менеджер сразу получит <br>СМС-оповещение </p>
-				<form action="#" class="formhead-form" name="form_header">
-					<input type="text" class="formhead-form_input form-input"  placeholder="Ваше имя*">
-					<input type="tel" class="formhead-form_input form-input" placeholder="Ваш телефон*">
-					<p class="form-popup_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="form-popup_link form-link"
-						target="_blank">политикой обработки персональных данных</a></p>
-						<button class="button formhead-form_btn form-popup_btn" type="submit">отправить заявку</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- modal "BUY" -->
-<div class="buy-overlay modal-overlay">
-	<div class="buy-modal modal">
-		<a class="buy-close-modal close-modal">
-			<svg viewBox="0 0 20 20">
-				<path fill="#333" fill-opacity="0.5" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
-			</svg>
-		</a>
-		<div class="buy-modal-content modal-content">
-				<div class="buy-modal-content_left">
-				<h4 class="buy-modal-content_left__title js-popup-title"></h4>
-				<p class="icon-text buy-modal-content_left__text js-popup-text"></p>
-			</div>
-			<div class="formhead form-popup buy-modal-content_right">
-				<div class="line form-popup_line"></div>
-				<h3 class="title form-popup_title"><strong>закажите обратный звонок и получите <br>бесплатную консультацию</strong></h3>
-				<form class="formhead-form" name="form_callback">
+				<form class="formhead-form" name="form-callback">
 					<input type="text" class="formhead-form_input form-input" name="name" placeholder="Ваше имя*">
-					<input type="tel" class="formhead-form_input form-input" name="phone" placeholder="Ваш телефон*">
+					<input type="tel" class="formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+					<input type="hidden" name="callback">
 					<p class="form-popup_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="form-popup_link form-link"
 						target="_blank">политикой обработки персональных данных</a></p>
 						<button class="button formhead-form_btn form-popup_btn" type="submit">отправить заявку</button>
 					</form>
 				</div>
 			</div>
+<!-- modal "MORE" -->
+<div id="more" class="white-popup popup-more mfp-with-anim mfp-hide">
+	<div class="buy-box">
+		<div class="buy-box_left buy-box_left__two">
+			<span class="buy-box_img" style="background-image: url(img/icon/leaf-orange.png);"></span>
+		</div>
+		<div class="buy-box_right more-box_right">
+			<h4 class="buy-box_title more-box_title js-more-title"></h4>
+			<p class="buy-box_text icon-text js-more-text"></p>
 		</div>
 	</div>
-
+</div>
+	<!-- modal "ROOM" -->
+	<div id="room" class="white-popup popup-room mfp-with-anim mfp-hide">
+		<div class="formhead form-popup room-modal-content_right">
+			<div class="line form-popup_line"></div>
+			<h3 class="title form-popup_title"><strong>Пока тут пусто <br>231245</strong></h3>
+		</div>
+	</div>
+<!-- modal "PROJECT" -->
+	<div id="project" class="white-popup popup-project mfp-with-anim mfp-hide">
+		<div class="project-modal-content">
+				<div class="project-popup" style="background-image: url(img/icon/bg-popup.png);">
+					<div class="project-popup_item list-style-img">
+						<a href="#" target=_blank class="project-popup_link">документ о чем то важном</a>
+					</div>
+					<div class="project-popup_item list-style-img">
+						<a href="#" target=_blank class="project-popup_link">документ о чем то важном</a>
+					</div>
+					<div class="project-popup_item list-style-img">
+						<a href="#" target=_blank class="project-popup_link">документ о чем то важном документ о чем то важном документ о чем то важном</a>
+					</div>
+					<div class="project-popup_item list-style-img">
+						<a href="#" target=_blank class="project-popup_link">документ о чем то важном</a>
+					</div>
+					<div class="project-popup_item list-style-img">
+						<a href="#" target=_blank class="project-popup_link">документ о чем то важном</a>
+					</div>
+				</div>
+			</div>
+	</div>
+<!-- modal "COMMENT" -->
+	<div id="comment" class="white-popup popup-comment mfp-with-anim mfp-hide">
+		<div class="comment-modal">
+			<div class="comment-modal__left">
+				<textarea name="text" form="form-comment" class="form-input comment-modal__textarea" rows="15" placeholder="Ваш отзыв"></textarea>
+			</div>
+			<div class="formhead form-popup comment-modal__right">
+				<div class="line form-popup_line"></div>
+				<h3 class="title form-popup_title comment-modal_title"><strong>оставте ваш отзыв</strong></h3>
+				<form class="formhead-form" name="form-comment" id="form-comment">
+					<input type="text" class="formhead-form_input form-input" name="name" placeholder="Ваше имя*">
+					<input type="tel" class="formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+					<input type="hidden" name="comments">
+					<p class="form-popup_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="form-popup_link form-link"
+						target="_blank">политикой обработки персональных данных</a></p>
+						<button class="button formhead-form_btn form-popup_btn" type="submit">отправить заявку</button>
+					</form>
+				</div>
+			</div>
+	</div>
+<!-- modal "THANKS" -->
+<div id="thanks" class="white-popup popup-thanks mfp-with-anim mfp-hide">
+	<div class="thanks-modal-content">
+		<div class="formhead form-popup thanks-popup">
+			<div class="line form-popup_line"></div>
+			<h3 class="title form-popup_title"><strong>спасибо за заявку!</strong></h3>
+			<p class="form-popup_text icon-text">Ваша заявка поступила в работу, наш менеджер в ближайшее время обработает вашу заявку</p>
+		</div>
+	</div>
+</div>
 
 				<svg style="display:none">
-					<!-- CLOCK -->
-					<svg>
-						<use xlink:href='#clock' />
-					</svg><svg>
-						<use xlink:href='#placeholder' />
-					</svg>
-
-
 					<symbol id="benefit-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					viewBox="0 0 448 448" style="enable-background:new 0 0 448 448;" xml:space="preserve">
 					<style type="text/css">

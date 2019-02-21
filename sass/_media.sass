@@ -5,14 +5,202 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	.benefit-box_svg
+		display: none
+	.s-wrapper
+		background-position: 30% 40%
+	.soon-svg
+		margin-left: -10%
 // ≥992px
 +media-breakpoint-down(md)
-
+	.content-svg
+		display: none
+	.prospective-svg 
+		width: 40%
+	.comfort-list_item
+		margin: 15px
+	.nearby-svg
+		width: 50%
+	.benefit
+		padding: 0
+	.foto-item
+		min-height: 400px
+	.s-wrapper
+		background-position: 30% 50%
+	.buy-box
+		padding: 15px
+	.popup-more .buy-box
+		padding: 0
+		&_right
+			padding-right: 10px
+	.comment-box
+		margin-bottom: 25px
+		height: auto
+	.question-form_box
+		flex-direction: column
+		text-align: center
+	.question
+		text-align: center
+		padding-top: 30px
+		&-text
+			display: none
+		&-form_check
+			text-align: center
+	.question-form_box__input, .question-form_box__textarea 
+		width: 100%
+	.question-form_box__textarea
+		margin-left: 0
+	.section-title-md-center
+		display: inline-block
+		position: relative
+		left: 50%
+		transform: translateX(-50%)
+		margin-bottom: 20px
+	.footer-logo_box
+		display: inline-block
+		position: relative
+		left: 50%
+		transform: translateX(-50%)
+	.footer-text
+		display: inline-block
+		position: relative
+		left: 50%
+		transform: translateX(-50%)
+	.footer-address, .footer-callback
+		display: flex
+		flex-direction: column
+		height: 100px
+		justify-content: center
+		align-items: center
+	.callback-address_text
+		display: inline-block
+	.copyright-box
+		justify-content: center
+		margin: 0
+	.copyright-box__text
+		margin: 0 0 20px 0
+	.callback-phone
+		margin: 0
 // ≥768px
 +media-breakpoint-down(sm)
-
+	.title
+		font-size: 34px
+	.logo
+		position: relative
+		left: 50%
+		transform: translateX(-50%)
+		&-text
+			margin: 10px 0 20px 0
+			text-align: center
+	.formhead
+		width: 100%
+	.callback
+		display: flex
+		text-align: center
+		flex-wrap: wrap
+		align-items: center
+		flex-direction: column
+		justify-content: space-around
+		height: 200px
+		&-btn
+			width: 200px
+		&-address_text
+			display: block
+			text-align: center
+			padding: 0
+			&:after
+				background: none
+	.footer-callback
+		height: 100px
+	.section-title
+		text-align: center
+		width: 100%
+	.content
+		text-align: center
+		margin-top: 30px
+		&-text
+			width: 100%
+		&-icon_item
+			text-align: left
+			width: 45%
+			padding-bottom: 20px	
+			padding-left: 40px
+	.prospective-svg 
+		display: none
+	.icon
+		display: flex
+		justify-content: center
+	.comfort
+		margin-top: 100px
+	.line
+		display: inline-block
+		margin: 0 auto
+	.nearby-svg
+		display: none
+	section
+		padding: 50px 0
+	.line
+		width: 100%
+	.foto .owl-prev, .foto .owl-next
+		height: 80px
+		span
+			font-size: 80px
+			line-height: 80px
+	.s-wrapper
+		background: none
+	.benefit-box
+		margin-top: 50px
+	.buy-btn, .room-btn, .comment-icon
+		position: static
+		display: block
+		margin: 15px auto
+	.discount-form
+		width: 100%
+	.about-right
+		margin-top: 50px
+	.about-svg_line
+		display: none
+	.soon-svg
+		display: none
+	.s-soon
+		text-align: center
+	.comment-icon
+		display: inline-block
+		text-align: center
+	.question-form_btn
+		width: auto
+	.section-title-md-center
+		display: inline
+		position: static
+		text-align: center
+	.layout-box_line
+		width: 27%
+	.s-map
+		padding-bottom: 500px
+		background-position: 65% bottom
+	.map-box
+		margin: 0
+		max-width: 100%
+	.form-popup_title
+		font-size: 20px
+		-webkit-overflow-scrolling: touch
+	.soon-link
+		display: inline
+	.soon-link__box
+		justify-content: space-between
 // ≥576px
 +media-breakpoint-down(xs)
+	.prospective-svg 
+		display: none
+	.discount
+		text-align: center
+	.discount-form
+		padding: 20px
+	.foto-item
+		min-height: 300px
+	.project-popup
+		padding: 20px
+
 
 
 /*==========  Mobile First  ==========*/
