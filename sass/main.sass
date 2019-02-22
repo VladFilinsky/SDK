@@ -55,6 +55,7 @@ button
 	transition: color .25s ease
 	&:hover
 		color: $accent
+		text-decoration: underline
 section, header
 	padding: 100px 0
 	position: relative
@@ -527,6 +528,12 @@ section, header
 		color: #fff
 		font-size: 22px
 		margin: 20px 0 30px 0
+	&-link
+		color: #fff
+		display: inline-block
+		position: absolute
+		bottom: 0
+		right: 0
 	&-form
 		margin-top: 20px
 		width: 55%
@@ -536,6 +543,7 @@ section, header
 			margin-top: 10px
 		&_btn
 			width: 100%
+
 /* DISCAUNT END */
 /* ROOM */
 .room
@@ -584,12 +592,12 @@ section, header
 			font-size: 12px
 		&_bottom
 			padding: 30px 30px 20px 30px
-			background-color: #f2f2f2
 			border-bottom-left-radius: 10px 
 			border-bottom-right-radius: 10px
-			background-image:  url(../img/icon/bg-popup.png)
-			bg
-			background-size: 30%
+			background-color: #f2f2f2
+			background-position: 140% 0
+			background-repeat: no-repeat
+			background-size: 50%
 		&_oldprice
 			display: block
 			text-decoration: line-through
@@ -799,8 +807,8 @@ section, header
 /* MAP */
 .s-map
 	padding: 50px 0
-	min-height: 600px
 	background: $blue url(../img/bg-map.jpg) center no-repeat / cover
+	background-color: #e9e3cb
 	font-family: $opensans
 .map-box
 	margin: 15px
@@ -822,8 +830,16 @@ section, header
 /* BOTTOM */
 .s-bottom
 	background-color: $blue
+	z-index: 0
+.bottom-content
+	margin: 0
 	position: relative
-	padding: 100px 0
+	z-index: 1
+	&_svg
+		left: 0
+		top: 0
+		width: 60%
+
 /* FOOTER */
 .s-footer
 	background-color: $footer

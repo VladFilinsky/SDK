@@ -89,8 +89,9 @@ $('a[href="#room"]').magnificPopup({
   },
   midClick: true 
 });
-var bg = $('.layout-box:odd').find('.layout-box_bottom').css('background-image', 'url(../img/icon/bg-popup.png)');
-console.log(bg);
+/* чередование background для блоков в "ROOM" */
+$('.layout-box:odd').find('.layout-box_bottom').css('background-image', 'url(../img/icon/bg-popup.png)');
+
 /* MODAL "PROJECT" */
 $('a[href="#project"]').magnificPopup({
   removalDelay: 500, 

@@ -36,6 +36,9 @@
 	.comment-box
 		margin-bottom: 25px
 		height: auto
+	.layout-box_bottom
+		background-size: 40%
+		background-position: 120% 10%
 	.question-form_box
 		flex-direction: column
 		text-align: center
@@ -81,6 +84,10 @@
 		margin: 0 0 20px 0
 	.callback-phone
 		margin: 0
+	.content-text
+		width: 100%
+	.bottom-content_svg
+		width: 100%
 // ≥768px
 +media-breakpoint-down(sm)
 	.title
@@ -99,6 +106,8 @@
 		width: 100%
 	.mobile-formhead
 		width: 100%
+		position: relative
+		z-index: 1
 		padding: 30px 30px 30px 50px
 		border-radius: 0
 		background-size: 40%
@@ -183,8 +192,13 @@
 		display: block
 		margin: 15px auto
 		max-width: 260px
-	.discount-form
-		width: 100%
+	.discount
+		&-form
+			width: 100%
+		&-link
+			position: static
+			margin-top: 30px
+			text-align: center
 	.about-right
 		margin-top: 50px
 	.about-svg_line
@@ -194,8 +208,7 @@
 	.s-soon
 		text-align: center
 	.comment-icon
-		display: inline-block
-		text-align: center
+		display: flex
 	.question-form_btn
 		width: auto
 	.section-title-md-center
@@ -218,6 +231,8 @@
 		display: inline
 	.soon-link__box
 		justify-content: space-between
+	.s-bottom
+		padding-bottom: 0
 // ≥576px
 +media-breakpoint-down(xs)
 	.prospective-svg 
@@ -262,7 +277,6 @@
 		padding: 50px 40px
 	.popup-comment
 		max-width: 320px
-
 	.proom
 		max-width: 350px
 		&-wrapper
@@ -277,6 +291,10 @@
 			text-align: left
 		&_btn
 			margin: 20px auto
+	.s-map
+		padding-top: 500px
+		background-position: 30% -150px
+		background-color: #e9e3cb	
 	
 
 
