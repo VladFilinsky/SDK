@@ -43,10 +43,10 @@
 			<div class="content">
 				<div class="row justify-content-between">
 					<div class="col-xl-6 col-sm-12 col-md-6 col-lg-6 col-12">
-							<span class="section-title wow fadeInLeft" data-wow-duration="1.5s">
+						<span class="section-title wow fadeInLeft" data-wow-duration="1.5s">
 							<div class="line content-line"></div>
-						<h1 class="title content-title">КВАРТИРЫ<br>В НОВОМ ДОМЕ</h1>
-							</span>
+							<h1 class="title content-title">КВАРТИРЫ<br>В НОВОМ ДОМЕ</h1>
+						</span>
 						<p class="content-subtitle wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.1s">в п.Белый Яр г. Сургут</p>
 						<span class="content-price wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">от 53 000 р. / м<sup>2</sup><br><strong>с чистовой отделкой</strong></span>
 						<ul class="content-icon wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
@@ -57,7 +57,7 @@
 						</ul>	
 						<p class="content-text">Застройщик ПАО "Сургутстройтрест" перешел под управление новой структуры. Проект ЖК "Западный квартал" (Гидронамыв) был полностью профинансирован. Строительство дома завершится точно в срок в 4 квартале 2019 года.</p>		
 					</div>
-					<div class="col-xl-4 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-5 col-12">
+					<div class="col-xl-4 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-5 col-12 d-none d-md-block d-lg-block d-xl-block">
 						<div class="formhead">
 							<h3 class="title formhead-title">Запишитесь<br> <span class="formhead-title_big">на экскурсию </span><br>
 								<strong>и получите<br>СПЕЦИАЛЬНЫЙ ПОДАРОК</strong></h3>
@@ -70,10 +70,34 @@
 										<button class="button formhead-form_btn" type="submit">отправить заявку</button>
 									</form>
 								</div>
-							</div>
+							</div>						
 						</div>
 					</div>
 				</div> <!-- container -->
+				<!-- Блок видимый на планшетах и ниже -->
+				<div class="conteiner-fluid no-padding">
+					<div class="row">
+					<div class="col-12  d-md-none d-lg-none d-xl-none">
+						<div class="mobile-formhead formhead">
+							<h3 class="title mobile-formhead-title d-none d-sm-block"><span>запишитесь</span> на экскурсию</h3>
+							<h3 class="title mobile-formhead-title d-sm-none"><span>запишитесь</span><br>на экскурсию</h3>
+								<p class="title mobile-formhead-text d-none d-sm-block"><strong>и получите СПЕЦИАЛЬНЫЙ ПОДАРОК</strong></p>
+								<p class="title mobile-formhead-text d-sm-none"><strong>и получите<br> СПЕЦИАЛЬНЫЙ ПОДАРОК</strong></p>
+								<form class="mobile-formhead-form" name="form-callback">
+									<input type="text" class="mobile-formhead-form_input form-input" name="name" placeholder="Ваше имя*">
+									<input type="tel" class="mobile-formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+									<input type="hidden" name="callback">
+									<button class="button mobile-formhead-form_btn">отправить заявку</button>
+									<p class="mobile-formhead-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="formhead-form_link form-link"
+										target="_blank">политикой обработки персональных данных</a></p>
+
+									</form>
+								</div>
+							</div>	
+					</div>
+				</div>
+
+
 				<div class="content-svg bg-svg wow fadeInRight" data-wow-duration="1.5s">
 					<svg width="1200" height="100%">
 						<pattern id="bg-svg_img" width="100%" height="100%">
@@ -199,7 +223,7 @@
 								<div class="comfort-list_item comfort-list_item__2 icon-text list-style-img wow fadeInUp" data-wow-delay="0.1s"><strong class="big">идеальная экология</strong><br> и завораживающие вид из окон круглый год</div>
 							</div>
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-									<div class="comfort-list_item comfort-list_item__3 icon-te list-style-img wow fadeInUp" data-wow-delay="0.2s"><strong class="big">безопасное место</strong><br> для жизни вблизи Сургата без вредных производств</div>
+									<div class="comfort-list_item comfort-list_item__3 icon-text list-style-img wow fadeInUp" data-wow-delay="0.2s"><strong class="big">безопасное место</strong><br> для жизни вблизи Сургата без вредных производств</div>
 							</div>
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 								<div class="comfort-list_item comfort-list_item__4 icon-text list-style-img wow fadeInUp" data-wow-delay="0.3s"><strong class="big">инфраструктура</strong><br>развитая и обновляемая</div>
@@ -488,11 +512,11 @@
 					<button class="button room-btn">смотреть общий план</button>
 				</div>
 			</div>
-			<div class="layout room-layout">
+			<div class="layout room-layout ">
 				<div class="row">
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/5.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/2.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -504,7 +528,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/6.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/12.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -516,7 +540,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/7.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/11.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -528,7 +552,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/8.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/10.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -540,7 +564,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/9.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/9.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -552,7 +576,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/10.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/8.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -564,7 +588,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/11.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/7.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -576,7 +600,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/12.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/6.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -588,43 +612,66 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/4.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/5.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
-								<span class="layout-box_oldprice">от 2 789 000 руб</span>
-								<span class="layout-box_newprice">от 2 486 000 руб.</span>
+								<h4 class="layout-box_title room-layout_box__title">5К вариант А</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 145,2 м2</p>
+								<span class="layout-box_oldprice">от 8 789 000 руб</span>
+								<span class="layout-box_newprice">от 10 486 000 руб.</span>
 							</div>
+							<!-- Характеристики квартиры видимые в попап окне -->
+							<ul class="proom-list" style="display: none">
+								<li><span>какие то характеристики этой квартиры</span></li>
+								<li><span>какие то характеристики этой квартиры</span></li>
+								<li><span>какие то характеристики этого дома</span></li>
+								<li><span>какие то характеристики этого дома</span></li>
+								<li><span>какие то характеристики этого дома</span></li>
+
+							</ul>							
 						</a>
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/3.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/4.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
-								<span class="layout-box_oldprice">от 2 789 000 руб</span>
-								<span class="layout-box_newprice">от 2 486 000 руб.</span>
+								<h4 class="layout-box_title room-layout_box__title">3К вариант А</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 100,2 м2</p>
+								<span class="layout-box_oldprice">от 3 789 000 руб</span>
+								<span class="layout-box_newprice">от 4 486 000 руб.</span>
 							</div>
+							<!-- Характеристики квартиры видимые в попап окне -->
+							<ul class="proom-list" style="display: none">
+								<li><span>какие то характеристики этой квартиры</span></li>
+								<li><span>какие то характеристики этой квартиры</span></li>
+								<li><span>какие то характеристики этого дома</span></li>
+								<li><span>какие то характеристики этого дома</span></li>
+							</ul>							
 						</a>
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/1.png);"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/3.png)"></span>
+
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
-								<span class="layout-box_oldprice">от 2 789 000 руб</span>
-								<span class="layout-box_newprice">от 2 486 000 руб.</span>
+								<h4 class="layout-box_title room-layout_box__title">2К вариант А</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 58,2 м2</p>
+								<span class="layout-box_oldprice">от 2 589 000 руб</span>
+								<span class="layout-box_newprice">от 3 586 000 руб.</span>
 							</div>
+							<!-- Характеристики квартиры видимые в попап окне -->
+							<ul class="proom-list" style="display: none">
+								<li><span>какие то характеристики этой квартиры</span></li>
+								<li><span>какие то характеристики этой квартиры</span></li>
+								<li><span>какие то характеристики этого дома</span></li>
+							</ul>
 						</a>
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/2.png);"></span>
+								<span class="layout-box_img" style="background-image: url(img/planirovki/2.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
@@ -632,6 +679,16 @@
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
+							<!-- Характеристики квартиры видимые в попап окне -->
+							<ul class="proom-list" style="display: none">
+								<li><span>какие то характеристики этой квартиры</span></li>
+								<li><span>какие то характеристики этой квартиры</span></li>
+								<li><span>какие то характеристики этого дома</span></li>
+								<li><span>какие то характеристики этого дома</span></li>
+								<li><span>какие то характеристики этого дома</span></li>
+								<li><span>какие то характеристики этого дома</span></li>
+							</ul>
+
 						</a>
 					</div>																				
 				</div>
@@ -998,7 +1055,8 @@
 				</div>
 			</div>
 		</div>
-		<a href="#comment" class="button comment-btn" data-effect="mfp-move-horizontal">оставить отзыв</a>
+		<a href="#comment" class="button comment-btn d-none d-sm-block d-md-block d-lg-block d-xl-block" data-effect="mfp-move-horizontal">оставить отзыв</a>
+		<a href="#comment-mobile" class="button comment-btn d-block d-sm-none d-md-none d-lg-none d-xl-none" data-effect="mfp-move-horizontal">оставить отзыв</a>
 	</div>
 </section>
 <section class="s-question">
@@ -1067,7 +1125,7 @@
 					</div>
 				</div>
 			</section>
-		<section class="s-map" style="background-image: url(img/bg-map.jpg);">
+		<section class="s-map">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-5">
@@ -1120,7 +1178,8 @@
 									</div>
 								</div>
 								<div class="col-xl-2 col-lg-3 col-12">
-									<span class="logo-text footer-text">КВАРТИРЫ ОТ ЗАСТРОЙЩИКА В НОВОМ ЖИЛОМ МИКРОРАЙОНЕ В п.Белый ЯР</span>
+									<span class="logo-text footer-text d-none d-lg-block d-xl-block">КВАРТИРЫ ОТ ЗАСТРОЙЩИКА В НОВОМ ЖИЛОМ МИКРОРАЙОНЕ В п.Белый ЯР</span>
+									<span class="logo-text footer-text  d-lg-none d-xl-none">КВАРТИРЫ ОТ ЗАСТРОЙЩИКА<br> В НОВОМ ЖИЛОМ МИКРОРАЙОНЕ<br> В п.Белый ЯР</span>
 								</div>
 								<div class="col-xl-4 col-lg-3 col-12">
 									<ul class="callback-address footer-address">
@@ -1194,12 +1253,40 @@
 	</div>
 </div>
 	<!-- modal "ROOM" -->
-	<div id="room" class="white-popup popup-room mfp-with-anim mfp-hide">
-		<div class="formhead form-popup room-modal-content_right">
-			<div class="line form-popup_line"></div>
-			<h3 class="title form-popup_title"><strong>Пока тут пусто <br>231245</strong></h3>
+	<div id="room" class="white-popup proom mfp-with-anim mfp-hide">
+		<div class="proom-wrapper">
+		<div class="proom-imgbox">
+			<div class="proom-imgbox_item">
+			<span class=" proom-imgbox_item__big"></span>
+			</div>
+			<div class="proom-imgbox__bottom">
+			<figure>
+				<img src="img/planirovki/floor.png" alt="" class="proom-imgbox_item proom-imgbox_item__small">
+				<figcaption>Этаж</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/planirovki/clear.png" alt="" class="proom-imgbox_item proom-imgbox_item__small">
+				<figcaption>чистовая отделка</figcaption>
+			</figure>
+			</div>
+		</div>
+		<div class="proom-right">
+			<div class="line layout-box_line"></div>
+			<h4 class="layout-box_title room-layout_box__title proom-right__title"></h4>
+			<p class="icon-text layout-box_text proom-right__subtitle"></p>
+							<ul class="proom-parameter">
+							</ul>
+
+						<span class="layout-box_oldprice proom-right__oldprice"></span>
+						<span class="layout-box_newprice proom-right__newprice"></span>
+						<button class="button formhead-form_btn proom_btn" type="button">отправить заявку</button>
+		</div>
 		</div>
 	</div>
+
+
+
 <!-- modal "PROJECT" -->
 	<div id="project" class="white-popup popup-project mfp-with-anim mfp-hide">
 		<div class="project-modal-content">
@@ -1242,6 +1329,25 @@
 				</div>
 			</div>
 	</div>
+	<!-- modal "COMMENT-MOBILE" -->
+	<div id="comment-mobile" class="white-popup popup-comment mfp-with-anim mfp-hide">
+		<div class="comment-modal">
+			<div class="formhead form-popup comment-modal__right">
+				<div class="line form-popup_line"></div>
+				<h3 class="title form-popup_title comment-modal_title"><strong>оставте ваш отзыв</strong></h3>
+				<form class="formhead-form" name="form-comment" id="form-comment">
+					<input type="text" class="formhead-form_input form-input" name="name" placeholder="Ваше имя*">
+					<input type="tel" class="formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+					<textarea name="text" form="form-comment" class="form-input comment-modal__textarea" rows="5" placeholder="Ваш отзыв"></textarea>
+					<input type="hidden" name="comments">
+					<p class="form-popup_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="form-popup_link form-link"
+						target="_blank">политикой обработки персональных данных</a></p>
+						<button class="button formhead-form_btn form-popup_btn" type="submit">отправить заявку</button>
+					</form>
+				</div>
+			</div>
+	</div>
+
 <!-- modal "THANKS" -->
 <div id="thanks" class="white-popup popup-thanks mfp-with-anim mfp-hide">
 	<div class="thanks-modal-content">

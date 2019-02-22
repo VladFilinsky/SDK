@@ -66,6 +66,20 @@ $('a[href="#more"]').magnificPopup({
 });
 
 /* MODAL "ROOM" */
+$('a[href="#room"]').click(function(){
+  var roomtitle = $(this).find('.room-layout_box__title').html();
+  var roomsub = $(this).find('.layout-box_text').html();
+  var roomold = $(this).find('.layout-box_oldprice').html();
+  var roomnew = $(this).find('.layout-box_newprice').html();
+  var roomlist = $(this).find('ul.proom-list').html();
+  var roomimg = $(this).find('span.layout-box_img').attr('style');
+  $('div.proom-right').find('h4.proom-right__title').html(roomtitle);
+  $('div.proom-right').find('p.proom-right__subtitle').html(roomsub);
+  $('div.proom-right').find('span.proom-right__oldprice').html(roomold);
+  $('div.proom-right').find('span.proom-right__newprice').html(roomnew);
+  $('div.proom-right').find('ul.proom-parameter').html(roomlist);
+  $('div.proom-imgbox').find('span.proom-imgbox_item__big').attr("style", roomimg);
+});
 $('a[href="#room"]').magnificPopup({
   removalDelay: 500,
   callbacks: {
@@ -75,7 +89,8 @@ $('a[href="#room"]').magnificPopup({
   },
   midClick: true 
 });
-
+var bg = $('.layout-box:odd').find('.layout-box_bottom').css('background-image', 'url(../img/icon/bg-popup.png)');
+console.log(bg);
 /* MODAL "PROJECT" */
 $('a[href="#project"]').magnificPopup({
   removalDelay: 500, 
@@ -89,6 +104,17 @@ $('a[href="#project"]').magnificPopup({
 
 /* MODAL "COMMENT" */
 $('a[href="#comment"]').magnificPopup({
+  removalDelay: 500, //delay removal by X to allow out-animation
+  callbacks: {
+    beforeOpen: function() {
+       this.st.mainClass = this.st.el.attr('data-effect');
+    }
+  },
+  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});
+
+/* MODAL "COMMENT-MOBILE" */
+$('a[href="#comment-mobile"]').magnificPopup({
   removalDelay: 500, //delay removal by X to allow out-animation
   callbacks: {
     beforeOpen: function() {
