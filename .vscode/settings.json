@@ -1,0 +1,32 @@
+{
+	"git.ignoreMissingGitWarning": true,
+	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\bash.exe",
+	"workbench.statusBar.feedback.visible": false,
+	"workbench.activityBar.visible": true,
+	"editor.minimap.enabled": false,
+	"files.defaultLanguage": "html",
+	"editor.fontSize": 16,
+	"editor.tabSize": 2,
+	"workbench.editor.tabSizing": "shrink",
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.folding": false,
+	"editor.glyphMargin": false,
+	"editor.smoothScrolling": true,
+	"editor.quickSuggestions": {
+		"other": false,
+		"comments": false,
+		"strings": false
+	},
+	"editor.suggestOnTriggerCharacters": false,
+	"terminal.integrated.fontSize": 15,
+	"editor.renderWhitespace": "boundary",
+	"emmet.triggerExpansionOnTab": true,
+	"files.autoSave": "onFocusChange",
+	"liveServer.settings.ignoreFiles":
+	[
+		".vscode/**",
+    "**/*.scss",
+    "**/*.ts"
+	]
+}
