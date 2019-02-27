@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
 	<meta name="theme-color" content="#000">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -66,7 +66,8 @@
 								<strong>и получите<br>СПЕЦИАЛЬНЫЙ ПОДАРОК</strong></h3>
 							<form class="formhead-form" name="form-callback">
 								<input type="text" class="formhead-form_input form-input" name="name" placeholder="Ваше имя*">
-								<input type="tel" class="formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+								<input type="tel" class="formhead-form_input form-input" id="phone" name="phone" placeholder="Ваш телефон*"
+								 required="">
 								<input type="hidden" name="callback">
 								<p class="formhead-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="formhead-form_link form-link"
 									 target="_blank">политикой обработки персональных данных</a></p>
@@ -88,23 +89,22 @@
 						<p class="title mobile-formhead-text d-sm-none"><strong>и получите<br> СПЕЦИАЛЬНЫЙ ПОДАРОК</strong></p>
 						<form class="mobile-formhead-form" name="form-callback">
 							<input type="text" class="mobile-formhead-form_input form-input" name="name" placeholder="Ваше имя*">
-							<input type="tel" class="mobile-formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+							<input type="tel" class="mobile-formhead-form_input form-input" name="phone" id="phone" placeholder="Ваш телефон*"
+							 required="">
 							<input type="hidden" name="callback">
 							<button class="button mobile-formhead-form_btn">отправить заявку</button>
 							<p class="mobile-formhead-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="formhead-form_link form-link"
 								 target="_blank">политикой обработки персональных данных</a></p>
-
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 
-
 		<div class="content-svg bg-svg wow fadeInRight" data-wow-duration="1.5s">
 			<svg width="1200" height="100%">
 				<pattern id="bg-svg_img" width="100%" height="100%">
-					<image xlink:href=img/bg-1.jpg y="100" x="-200" width="1900" />
+					<image xlink:href="img/bg-1.jpg" y="100" x="-200" width="1900" height="1000" />
 				</pattern>
 				<circle r="650" cx="700" cy="50%" fill="url(#bg-svg_img)" stroke-width="40" stroke="#fff" />
 				<circle r="650" cx="700" cy="50%" fill="#00070d" fill-opacity=".3" stroke-width="40" stroke="#fff" />
@@ -255,7 +255,7 @@
 		<div class="prospective-svg svg-box wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.4s">
 			<svg width="100%" height="100%">
 				<pattern id="circlesvg-2" width="100%" height="100%">
-					<image xlink:href=img/bg-3.jpg y="10" x="-170" width="860" />
+					<image xlink:href="img/bg-3.jpg" y="10" x="-170" width="860" height="480" />
 				</pattern>
 				<circle r="250" cx="650" cy="300" fill="url(#circlesvg-2)" stroke-width="20" stroke="#fff" />
 			</svg>
@@ -263,7 +263,7 @@
 		<div class="prospective-svg svg-box wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.8s">
 			<svg width="100%" height="100%">
 				<pattern id="circlesvg-1" width="100%" height="100%">
-					<image xlink:href=img/bg-2.jpg y="10" x="-170" width="860" />
+					<image xlink:href="img/bg-2.jpg" y="10" x="-170" width="860" height="480" />
 				</pattern>
 				<circle r="250" cx="300" cy="310" fill="url(#circlesvg-1)" stroke-width="20" stroke="#fff" />
 			</svg>
@@ -341,7 +341,7 @@
 			<div class="nearby-svg svg-box wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.6s">
 				<svg width="100%" height="100%">
 					<pattern id="nearbysvg" width="100%" height="100%">
-						<image xlink:href=img/bg-nearby.jpg y="10" x="-290" width="750" />
+						<image xlink:href="img/bg-nearby.jpg" y="10" x="-290" width="750" height="480" />
 					</pattern>
 					<circle r="250" cx="400" cy="290" fill="url(#nearbysvg)" stroke-width="20" stroke="#fff" />
 				</svg>
@@ -512,7 +512,8 @@
 						<h4></h4>
 						<form action="#" class="discount-form" name="form-discount">
 							<input type="text" class="discount-form_input form-input" name="name" placeholder="Ваше имя*">
-							<input type="tel" class="discount-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+							<input type="tel" class="discount-form_input form-input" name="phone" id="phone" placeholder="Ваш телефон*"
+							 required="">
 							<input type="hidden" name="discount">
 							<p class="discount-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="discount-form_link form-link"
 								 target="_blank">политикой обработки персональных данных</a></p>
@@ -543,11 +544,11 @@
 				<div class="row">
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/2.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/1a.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<p class="icon-text layout-box_text">Общая площадь от 45,4 м2</p>
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
@@ -555,11 +556,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/12.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/1b.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<h4 class="layout-box_title room-layout_box__title">1К вариант Б</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 47,7 м2</p>
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
@@ -567,11 +568,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/11.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/2a.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<h4 class="layout-box_title room-layout_box__title">2К вариант А</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 61,5 м2</p>
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
@@ -579,11 +580,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/10.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/2b.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<h4 class="layout-box_title room-layout_box__title">2К вариант Б</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 58,9 м2</p>
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
@@ -591,11 +592,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/9.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/2v.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<h4 class="layout-box_title room-layout_box__title">2К вариант В</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 62,4 м2</p>
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
@@ -603,11 +604,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/8.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/2g.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<h4 class="layout-box_title room-layout_box__title">2К вариант Г</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 64,2 м2</p>
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
@@ -615,11 +616,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/7.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/2d.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<h4 class="layout-box_title room-layout_box__title">2К вариант Д</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 54,5 м2</p>
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
@@ -627,11 +628,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/6.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/2e.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<h4 class="layout-box_title room-layout_box__title">2К вариант Е</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 62,0 м2</p>
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
@@ -639,11 +640,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/5.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/2z.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">5К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 145,2 м2</p>
+								<h4 class="layout-box_title room-layout_box__title">2К вариант Ж</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 68,6 м2</p>
 								<span class="layout-box_oldprice">от 8 789 000 руб</span>
 								<span class="layout-box_newprice">от 10 486 000 руб.</span>
 							</div>
@@ -660,11 +661,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/4.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/3a.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
 								<h4 class="layout-box_title room-layout_box__title">3К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 100,2 м2</p>
+								<p class="icon-text layout-box_text">Общая площадь от 60,6 м2</p>
 								<span class="layout-box_oldprice">от 3 789 000 руб</span>
 								<span class="layout-box_newprice">от 4 486 000 руб.</span>
 							</div>
@@ -679,12 +680,12 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/3.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/3b.png)"></span>
 
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">2К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 58,2 м2</p>
+								<h4 class="layout-box_title room-layout_box__title">3К вариант Б</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 74,8 м2</p>
 								<span class="layout-box_oldprice">от 2 589 000 руб</span>
 								<span class="layout-box_newprice">от 3 586 000 руб.</span>
 							</div>
@@ -698,11 +699,11 @@
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
 						<a href="#room" class="layout-box wow fadeInUp" data-effect="mfp-move-horizontal">
-							<span class="layout-box_img" style="background-image: url(img/planirovki/2.png)"></span>
+							<span class="layout-box_img" style="background-image: url(img/planirovki/3v.png)"></span>
 							<div class="layout-box_bottom">
 								<div class="line layout-box_line"></div>
-								<h4 class="layout-box_title room-layout_box__title">1К вариант А</h4>
-								<p class="icon-text layout-box_text">Общая площадь от 45,2 м2</p>
+								<h4 class="layout-box_title room-layout_box__title">3К вариант В</h4>
+								<p class="icon-text layout-box_text">Общая площадь от 78,4 м2</p>
 								<span class="layout-box_oldprice">от 2 789 000 руб</span>
 								<span class="layout-box_newprice">от 2 486 000 руб.</span>
 							</div>
@@ -937,15 +938,15 @@
 		</div>
 		<div class="soon-svg svg-box wow fadeInLeft" data-wow-duration="2s">
 			<svg width="100%" height="100%">
-				<circle r="350" cx="35vw" cy="400" fill="#f1f1f1" />
+				<circle r="350" cx="35%" cy="400" fill="#f1f1f1" />
 			</svg>
 		</div>
 		<div class="soon-svg svg-box wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="2s">
 			<svg width="100%" height="100%">
 				<pattern id="soonsvg" width="100%" height="100%">
-					<image xlink:href=img/bg-1.jpg y="10" x="-170" width="750" />
+					<image xlink:href="img/bg-1.jpg" y="10" x="-170" width="750" height="420" />
 				</pattern>
-				<circle r="220" cx="22vw" cy="370" fill="url(#soonsvg)" stroke-width="20" stroke="#fff" />
+				<circle r="220" cx="22%" cy="370" fill="url(#soonsvg)" stroke-width="20" stroke="#fff" />
 			</svg>
 		</div>
 	</section>
@@ -1046,7 +1047,7 @@
 								<span class="comment-top_img">
 									<svg width="100%" height="100%">
 										<pattern id="commentsvg" width="100%" height="100%">
-											<image xlink:href=img/comment-1.jpg y="0" x="0" width="100" />
+											<image xlink:href="img/comment-1.jpg" y="0" x="0" width="100" height="120" />
 										</pattern>
 										<circle r="50" cx="50%" cy="50%" fill="url(#commentsvg)" stroke-width="5" stroke="#fff" />
 									</svg>
@@ -1068,7 +1069,7 @@
 								<span class="comment-top_img">
 									<svg width="100%" height="100%">
 										<pattern id="commentsvg-2" width="100%" height="100%">
-											<use xlink:href=#user y="-10" x="25" width="50" />
+											<use xlink:href="#user" y="-10" x="25" width="50" height="100" />
 										</pattern>
 										<circle r="50" cx="50%" cy="50%" fill="url(#commentsvg-2)" stroke-width="5" stroke="#fff" />
 									</svg>
@@ -1090,7 +1091,7 @@
 								<span class="comment-top_img">
 									<svg width="100%" height="100%">
 										<pattern id="commentsvg-3" width="100%" height="100%">
-											<image xlink:href=img/comment-2.jpg y="0" x="0" width="100" />
+											<image xlink:href="img/comment-2.jpg" y="0" x="0" width="100" height="100" />
 										</pattern>
 										<circle r="50" cx="50%" cy="50%" fill="url(#commentsvg-3)" stroke-width="5" stroke="#fff" />
 									</svg>
@@ -1127,7 +1128,7 @@
 							<div class="manager-svg svg-box">
 								<svg width="100%" height="100%">
 									<pattern id="managersvgtop" width="100%" height="100%">
-										<image xlink:href=img/manager.jpg y="0" x="0" width="160" />
+										<image xlink:href="img/manager.jpg" y="0" x="0" width="160" height="160" />
 									</pattern>
 									<circle r="80" cx="50%" cy="50%" fill="url(#managersvgtop)" stroke-width="10" stroke="#fff" />
 								</svg>
@@ -1150,7 +1151,8 @@
 							<div class="question-form_box">
 								<div class="question-form_box__input">
 									<input type="text" class="question-form_input form-input" name="name" placeholder="Ваше имя*">
-									<input type="tel" class="question-form_input form-input" name="phone" placeholder="Ваш телефон*" require="">
+									<input type="tel" class="question-form_input form-input" name="phone" id="phone" placeholder="Ваш телефон*"
+									 require="">
 									<input type="hidden" name="question">
 								</div>
 								<div class="question-form_box__textarea">
@@ -1169,7 +1171,7 @@
 							<div class="manager-svg svg-box">
 								<svg width="100%" height="100%">
 									<pattern id="managersvg" width="100%" height="100%">
-										<image xlink:href=img/manager.jpg y="0" x="0" width="160" />
+										<image xlink:href="img/manager.jpg" y="0" x="0" width="160" height="160" />
 									</pattern>
 									<circle r="80" cx="50%" cy="50%" fill="url(#managersvg)" stroke-width="10" stroke="#fff" />
 								</svg>
@@ -1249,7 +1251,8 @@
 								<strong>и получите<br>СПЕЦИАЛЬНЫЙ ПОДАРОК</strong></h3>
 							<form class="formhead-form" name="form-callback">
 								<input type="text" class="formhead-form_input form-input" name="name" placeholder="Ваше имя*">
-								<input type="tel" class="formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+								<input type="tel" class="formhead-form_input form-input" name="phone" id="phone" placeholder="Ваш телефон*"
+								 required="">
 								<input type="hidden" name="callback">
 								<p class="formhead-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="formhead-form_link form-link"
 									 target="_blank">политикой обработки персональных данных</a></p>
@@ -1271,7 +1274,8 @@
 						<p class="title mobile-formhead-text d-sm-none"><strong>и получите<br> СПЕЦИАЛЬНЫЙ ПОДАРОК</strong></p>
 						<form class="mobile-formhead-form" name="form-callback">
 							<input type="text" class="mobile-formhead-form_input form-input" name="name" placeholder="Ваше имя*">
-							<input type="tel" class="mobile-formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+							<input type="tel" class="mobile-formhead-form_input form-input" name="phone" id="phone" placeholder="Ваш телефон*"
+							 required="">
 							<input type="hidden" name="callback">
 							<button class="button mobile-formhead-form_btn">отправить заявку</button>
 							<p class="mobile-formhead-form_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="formhead-form_link form-link"
@@ -1284,7 +1288,7 @@
 		<div class="content-svg bg-svg wow fadeInRight" data-wow-duration="1.5s">
 			<svg width="1200" height="100%">
 				<pattern id="bg-bottom-svg_img" width="100%" height="100%">
-					<image xlink:href=img/bg-3.jpg y="100" x="-250" width="1600" />
+					<image xlink:href="img/bg-3.jpg" y="100" x="-250" width="1600" height="900" />
 				</pattern>
 				<circle r="650" cx="700" cy="50%" fill="url(#bg-bottom-svg_img)" stroke-width="40" stroke="#fff" />
 				<circle r="650" cx="700" cy="50%" fill="#00070d" fill-opacity=".1" stroke-width="40" stroke="#fff" />
@@ -1369,7 +1373,8 @@
 			<p class="form-popup_text icon-text">Менеджер сразу получит <br>СМС-оповещение </p>
 			<form class="formhead-form" name="form-callback">
 				<input type="text" class="formhead-form_input form-input" name="name" placeholder="Ваше имя*">
-				<input type="tel" class="formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+				<input type="tel" class="formhead-form_input form-input" name="phone" id="phone" placeholder="Ваш телефон*"
+				 required="">
 				<input type="hidden" name="callback">
 				<p class="form-popup_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="form-popup_link form-link"
 					 target="_blank">политикой обработки персональных данных</a></p>
@@ -1394,16 +1399,16 @@
 		<div class="proom-wrapper">
 			<div class="proom-imgbox">
 				<div class="proom-imgbox_item">
-					<span class=" proom-imgbox_item__big"></span>
+					<img class=" proom-imgbox_item__big">
 				</div>
 				<div class="proom-imgbox__bottom">
 					<figure>
-						<img src="img/planirovki/floor.png" alt="" class="proom-imgbox_item proom-imgbox_item__small">
+						<img src="img/planirovki/floor.png" alt="этаж" class="proom-imgbox_item proom-imgbox_item__small">
 						<figcaption>Этаж</figcaption>
 					</figure>
 
 					<figure>
-						<img src="img/planirovki/clear.png" alt="" class="proom-imgbox_item proom-imgbox_item__small">
+						<img src="img/planirovki/clear.png" alt="чистовая отделка" class="proom-imgbox_item proom-imgbox_item__small">
 						<figcaption>чистовая отделка</figcaption>
 					</figure>
 				</div>
@@ -1453,7 +1458,8 @@
 				<h3 class="title form-popup_title comment-modal_title"><strong>оставте ваш отзыв</strong></h3>
 				<form class="formhead-form" name="form-comment" id="form-comment">
 					<input type="text" class="formhead-form_input form-input" name="name" placeholder="Ваше имя*">
-					<input type="tel" class="formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+					<input type="tel" class="formhead-form_input form-input" name="phone" id="phone" placeholder="Ваш телефон*"
+					 required="">
 					<input type="hidden" name="comments">
 					<p class="form-popup_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="form-popup_link form-link"
 						 target="_blank">политикой обработки персональных данных</a></p>
@@ -1470,12 +1476,13 @@
 				<h3 class="title form-popup_title comment-modal_title"><strong>оставте ваш отзыв</strong></h3>
 				<form class="formhead-form" name="form-comment" id="form-comment">
 					<input type="text" class="formhead-form_input form-input" name="name" placeholder="Ваше имя*">
-					<input type="tel" class="formhead-form_input form-input" name="phone" placeholder="Ваш телефон*" required="">
+					<input type="tel" class="formhead-form_input form-input" name="phone" id="phone" placeholder="Ваш телефон*"
+					 required="">
 					<textarea name="text" form="form-comment" class="form-input comment-modal__textarea" rows="5" placeholder="Ваш отзыв"></textarea>
 					<input type="hidden" name="comments">
 					<p class="form-popup_check form-check">Отправляя форму, вы соглашаетесь с <a href="#" class="form-popup_link form-link"
 						 target="_blank">политикой обработки персональных данных</a></p>
-					<button class="button formhead-form_btn form-popup_btn" type="submit">отправить заявку</button>
+					<button class="button formhead-form_btn form-popup_btn">отправить заявку</button>
 				</form>
 			</div>
 		</div>
@@ -1657,7 +1664,6 @@ h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-
 c59.551,0,108,48.448,108,108S315.551,256,256,256z" />
 		</symbol>
 	</svg>
-
 	<script src="js/scripts.min.js"></script>
 	<!-- Start Sells Copyright -->
 	<script type="text/javascript" src="//jeema.ru/sells/sells_copyright/sells_copyright.js"></script>
