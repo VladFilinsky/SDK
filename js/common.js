@@ -1,4 +1,9 @@
 $(function () {
+
+	if (($(window).width()) < 768) {
+		$('.header, .s-bottom').children().removeClass("container").addClass("container-fluid no-padding");
+	};
+
 	/* Маска ввода номера телефона (плагин maskedinput) */
 	$('[type="tel"]').mask("+7(999) 999-99-99");
 
