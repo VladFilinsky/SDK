@@ -107,29 +107,29 @@ $(function () {
 				this.st.mainClass = this.st.el.attr('data-effect');
 			}
 		},
-		midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+		midClick: true
 	});
 
 	/* MODAL "COMMENT" */
 	$('a[href="#comment"]').magnificPopup({
-		removalDelay: 500, //delay removal by X to allow out-animation
+		removalDelay: 500,
 		callbacks: {
 			beforeOpen: function () {
 				this.st.mainClass = this.st.el.attr('data-effect');
 			}
 		},
-		midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+		midClick: true
 	});
 
 	/* MODAL "COMMENT-MOBILE" */
 	$('a[href="#comment-mobile"]').magnificPopup({
-		removalDelay: 500, //delay removal by X to allow out-animation
+		removalDelay: 500,
 		callbacks: {
 			beforeOpen: function () {
 				this.st.mainClass = this.st.el.attr('data-effect');
 			}
 		},
-		midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+		midClick: true
 	});
 
 	/* GALERY*/
@@ -161,15 +161,3 @@ $(function () {
 	});
 
 });
-
-// phone1.addEventListener("click", imask);
-
-// function imask() {
-
-// 	var element = this;
-// 	var maskOptions = {
-// 		mask: '+{7}(000)000-00-00'
-// 	};
-// 	var mask = new IMask(element, maskOptions);
-// 	console.log(element);
-// };
